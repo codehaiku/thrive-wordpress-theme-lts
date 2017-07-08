@@ -1,5 +1,7 @@
-Thrive 2.1.2
+Thrive 2.1.8^LTS Version
 
+===
+This is a long term support for Thrive 2.0
 ===
 
 Thrive is an innovative WordPress Theme designed to cater company portals, 
