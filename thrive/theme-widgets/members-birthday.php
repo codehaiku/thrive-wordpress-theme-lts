@@ -50,16 +50,17 @@ class Thrive_Members_Birthday_Widget extends WP_Widget {
 
 		<?php
 			$scope = intval( $instance['filter'] ); //1 Yearly, 2 Monthly, 3 Weekly
-		
+
 			// 1. Yearly
 			// Date of birth query
 		 	$stmt = $wpdb->prepare( "
 				SELECT user_id, value, DayOfYear( STR_TO_DATE( value, '%%Y-%%c-%%d') ) as `day_of_year`,
 				STR_TO_DATE( value, '%%Y-%%c-%%d') as `birth_day`
-				FROM {$wpdb->prefix}bp_xprofile_data 
-				WHERE field_id = 2 
+				FROM {$wpdb->prefix}bp_xprofile_data
+				WHERE field_id = %d
 				AND DayOfYear( STR_TO_DATE( value, '%%Y-%%c-%%d') ) >= DayOfYear( STR_TO_DATE( '%s', '%%Y-%%c-%%d') )
 				ORDER BY `day_of_year` ASC LIMIT 15",
+                $db_field_id, // Field ID
 				date('Y-m-d') // Date today
 			);
 
@@ -68,11 +69,12 @@ class Thrive_Members_Birthday_Widget extends WP_Widget {
 				$stmt = $wpdb->prepare( "
 					SELECT user_id, value, DayOfYear( STR_TO_DATE( value, '%%Y-%%c-%%d') ) as `day_of_year`,
 					STR_TO_DATE( value, '%%Y-%%c-%%d') as `birth_day`
-					FROM {$wpdb->prefix}bp_xprofile_data 
-					WHERE field_id = 2 
+					FROM {$wpdb->prefix}bp_xprofile_data
+					WHERE field_id = %d
 					AND MONTH( STR_TO_DATE( value, '%%Y-%%c-%%d') ) = MONTH( STR_TO_DATE( '%s', '%%Y-%%c-%%d') )
 					AND DayOfYear( STR_TO_DATE( value, '%%Y-%%c-%%d') ) >= DayOfYear( STR_TO_DATE( '%s', '%%Y-%%c-%%d') )
 					ORDER BY `day_of_year` ASC LIMIT 15",
+                    $db_field_id, // Field ID
 					date('Y-m-d'), // Date today
 					date('Y-m-d') // Date today
 				);
@@ -81,26 +83,27 @@ class Thrive_Members_Birthday_Widget extends WP_Widget {
 			// 3. Weekly
 			if ( 3 === $scope ) {
 				$stmt = $wpdb->prepare( "
-					SELECT 
-					user_id, value, 
-					DayOfYear( STR_TO_DATE( value, '%%Y-%%c-%%d') ) as `day_of_year`, 
-					STR_TO_DATE( value, '%%Y-%%c-%%d') as `birth_day` 
-					FROM dsc_bp_xprofile_data 
-					WHERE field_id = 2 
+					SELECT
+					user_id, value,
+					DayOfYear( STR_TO_DATE( value, '%%Y-%%c-%%d') ) as `day_of_year`,
+					STR_TO_DATE( value, '%%Y-%%c-%%d') as `birth_day`
+					FROM {$wpdb->prefix}bp_xprofile_data
+					WHERE field_id = %d
 					AND WEEKOFYEAR( STR_TO_DATE( REPLACE( value, LEFT( value, 4 ), '%s'), '%%Y-%%c-%%d') ) = WEEKOFYEAR( STR_TO_DATE( '%s', '%%Y-%%c-%%d') )
 					ORDER BY `day_of_year` ASC LIMIT 15",
+                    $db_field_id, // Field ID
 					date('Y'), // Year now
 					date('Y-m-d') // Date today
 				);
 			}
 		?>
 		<?php $members = $wpdb->get_results( $stmt, OBJECT ); ?>
-		
+
 		<?php if ( ! empty( $members ) ) { ?>
 			<ul class="thrive-bday-widget-list">
-				<?php 
+				<?php
 					$now = date('F d');
-					foreach( $members as $member ) { 
+					foreach( $members as $member ) {
 						$user_id = $member->user_id;
 						$user_link = bp_core_get_userlink( $user_id );
 						$user_domain = bp_core_get_user_domain( $user_id );
@@ -144,7 +147,7 @@ class Thrive_Members_Birthday_Widget extends WP_Widget {
 								</div>
 							</div>
 						</li>
-					<?php } //end foreach 
+					<?php } //end foreach
 				?>
 
 			</ul>
