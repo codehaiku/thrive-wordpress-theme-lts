@@ -625,3 +625,12 @@
         }
     }
 }
+/**
+ * Hotfix for <https://github.com/codehaiku/thrive-wordpress-theme-lts/issues/5>
+ */
+body.thrive-inline #thrive-wisechat-support .wcControlsButtonsIncluded a.wcAddImageAttachment:before,
+body.thrive-inline #thrive-wisechat-support .wcContainer .wcControls .wcAddFileAttachment:before {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
