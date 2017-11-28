@@ -48,55 +48,56 @@ class Thrive_Members_Birthday_Widget extends WP_Widget {
 
 		<?php } ?>
 
+        <?php $db_field_id = absint( $db_field_id ); ?>
+
 		<?php
 			$scope = intval( $instance['filter'] ); //1 Yearly, 2 Monthly, 3 Weekly
+            /* Todo:
+            1. Change all query from wpdb->prepare to real_esscape
+            2. Apply to all date range, yearly, monthly, weekly
+            3. Solve multisite issue
+            */
 
 			// 1. Yearly
 			// Date of birth query
-		 	$stmt = $wpdb->prepare( "
-				SELECT user_id, value, DayOfYear( STR_TO_DATE( value, '%%Y-%%c-%%d') ) as `day_of_year`,
-				STR_TO_DATE( value, '%%Y-%%c-%%d') as `birth_day`
-				FROM {$wpdb->prefix}bp_xprofile_data
-				WHERE field_id = %d
-				AND DayOfYear( STR_TO_DATE( value, '%%Y-%%c-%%d') ) >= DayOfYear( STR_TO_DATE( '%s', '%%Y-%%c-%%d') )
-				ORDER BY `day_of_year` ASC LIMIT 15",
-                $db_field_id, // Field ID
-				date('Y-m-d') // Date today
-			);
+		 	$stmt = "
+				SELECT user_id, value, DayOfYear( STR_TO_DATE( value, '%Y-%c-%d') ) as `day_of_year`,
+				STR_TO_DATE( value, '%Y-%c-%d') as `birth_day`
+				FROM {$wpdb->base_prefix}bp_xprofile_data
+				WHERE field_id = {$db_field_id}
+				AND DayOfYear( STR_TO_DATE( value, '%Y-%c-%d') )
+                    >= DayOfYear( STR_TO_DATE( '".$wpdb->_real_escape(date('Y-m-d'))."', '%Y-%c-%d') )
+				ORDER BY `day_of_year` ASC LIMIT 15";
 
 			// 2. Monthly
 			if ( 2 === $scope ) {
-				$stmt = $wpdb->prepare( "
-					SELECT user_id, value, DayOfYear( STR_TO_DATE( value, '%%Y-%%c-%%d') ) as `day_of_year`,
-					STR_TO_DATE( value, '%%Y-%%c-%%d') as `birth_day`
-					FROM {$wpdb->prefix}bp_xprofile_data
-					WHERE field_id = %d
-					AND MONTH( STR_TO_DATE( value, '%%Y-%%c-%%d') ) = MONTH( STR_TO_DATE( '%s', '%%Y-%%c-%%d') )
-					AND DayOfYear( STR_TO_DATE( value, '%%Y-%%c-%%d') ) >= DayOfYear( STR_TO_DATE( '%s', '%%Y-%%c-%%d') )
-					ORDER BY `day_of_year` ASC LIMIT 15",
-                    $db_field_id, // Field ID
-					date('Y-m-d'), // Date today
-					date('Y-m-d') // Date today
-				);
+				$stmt = "
+					SELECT user_id, value, DayOfYear( STR_TO_DATE( value, '%Y-%c-%d') ) as `day_of_year`,
+					STR_TO_DATE( value, '%Y-%c-%d') as `birth_day`
+					FROM {$wpdb->base_prefix}bp_xprofile_data
+					WHERE field_id = {$db_field_id}
+					AND MONTH( STR_TO_DATE( value, '%Y-%c-%d') )
+                        = MONTH( STR_TO_DATE( '".$wpdb->_real_escape(date('Y-m-d'))."', '%Y-%c-%d') )
+					AND DayOfYear( STR_TO_DATE( value, '%Y-%c-%d') )
+                        >= DayOfYear( STR_TO_DATE( '".$wpdb->_real_escape(date('Y-m-d'))."', '%Y-%c-%d') )
+					ORDER BY `day_of_year` ASC LIMIT 15";
 			}
 
 			// 3. Weekly
 			if ( 3 === $scope ) {
-				$stmt = $wpdb->prepare( "
+				$stmt = "
 					SELECT
 					user_id, value,
-					DayOfYear( STR_TO_DATE( value, '%%Y-%%c-%%d') ) as `day_of_year`,
-					STR_TO_DATE( value, '%%Y-%%c-%%d') as `birth_day`
-					FROM {$wpdb->prefix}bp_xprofile_data
-					WHERE field_id = %d
-					AND WEEKOFYEAR( STR_TO_DATE( REPLACE( value, LEFT( value, 4 ), '%s'), '%%Y-%%c-%%d') ) = WEEKOFYEAR( STR_TO_DATE( '%s', '%%Y-%%c-%%d') )
-					ORDER BY `day_of_year` ASC LIMIT 15",
-                    $db_field_id, // Field ID
-					date('Y'), // Year now
-					date('Y-m-d') // Date today
-				);
+					DayOfYear( STR_TO_DATE( value, '%Y-%c-%d') ) as `day_of_year`,
+					STR_TO_DATE( value, '%Y-%c-%d') as `birth_day`
+					FROM {$wpdb->base_prefix}bp_xprofile_data
+					WHERE field_id = {$db_field_id}
+					AND WEEKOFYEAR( STR_TO_DATE( REPLACE( value, LEFT( value, 4 ), '".$wpdb->_real_escape(date('Y'))."' ), '%Y-%c-%d') )
+                        = WEEKOFYEAR( STR_TO_DATE( '".$wpdb->_real_escape(date('Y-m-d'))."', '%Y-%c-%d') )
+					ORDER BY `day_of_year` ASC LIMIT 15";
 			}
 		?>
+
 		<?php $members = $wpdb->get_results( $stmt, OBJECT ); ?>
 
 		<?php if ( ! empty( $members ) ) { ?>
