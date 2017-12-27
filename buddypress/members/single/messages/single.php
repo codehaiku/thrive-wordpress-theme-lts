@@ -26,7 +26,7 @@
 
 				<?php else : ?>
 
-					<?php printf( __( 'Conversation between %s and you.', 'thrive' ), bp_get_thread_recipients_list() ); ?>
+					<?php printf( __( 'Conversation between %s.', 'thrive' ), bp_get_thread_recipients_list() ); ?>
 
 				<?php endif; ?>
 
