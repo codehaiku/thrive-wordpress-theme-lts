@@ -7,7 +7,7 @@
 class DunhakdisWidgets {
 
 	public function __construct() {
-		
+
 		$this->registerActionHooks();
 
 		return $this;
@@ -25,19 +25,19 @@ class DunhakdisWidgets {
 
 	public function preview() {
 
-		wp_enqueue_script( 
-  			'widgets_css_preview', 
-  			get_template_directory_uri() . '/thrive/widgets/customizer/customizer.js', 
+		wp_enqueue_script(
+  			'widgets_css_preview',
+  			get_template_directory_uri() . '/thrive/widgets/customizer/customizer.js',
   			array( 'customize-preview', 'jquery' )
   		);
-		
+
 		return;
 	}
 
 	public function registerWidgets() {
 
 		register_sidebar( array(
-			'name'          => esc_html__( 'Sidebar', 'thrive' ),
+			'name'          => 'Sidebar',
 			'id'            => 'sidebar-1',
 			'description'   => '',
 			'before_widget' => '<aside id="%1$s" class="sidebar-widgets widget %2$s">',
@@ -47,7 +47,7 @@ class DunhakdisWidgets {
 		));
 
 		register_sidebar( array(
-			'name'          => esc_html__( 'BP Sidebar', 'thrive' ),
+			'name'          => 'BP Sidebar',
 			'id'            => 'bp-sidebar',
 			'description'   => '',
 			'before_widget' => '<aside id="%1$s" class="sidebar-widgets buddypress widget %2$s">',
@@ -57,7 +57,7 @@ class DunhakdisWidgets {
 		));
 
 		register_sidebar( array(
-			'name'          => esc_html__( 'Sidenav Sidebar', 'thrive' ),
+			'name'          => 'Sidenav Sidebar',
 			'id'            => 'sidenav-sidebar',
 			'description'   => '',
 			'before_widget' => '<aside id="%1$s" class="sidebar-widgets buddypress widget %2$s">',
@@ -65,9 +65,9 @@ class DunhakdisWidgets {
 			'before_title'  => '<h3 class="widget-title h6">',
 			'after_title'   => '</h3>',
 		));
-		
+
 		register_sidebar( array(
-			'name'          => esc_html__( 'Archives', 'thrive' ),
+			'name'          => 'Archives',
 			'id'            => 'archives-sidebar',
 			'description'   => '',
 			'before_widget' => '<aside id="%1$s" class="sidebar-widgets archives widget %2$s">',
@@ -77,7 +77,7 @@ class DunhakdisWidgets {
 		));
 
 		register_sidebar( array(
-			'name'          => esc_html__( 'Dashboard', 'thrive' ),
+			'name'          => 'Dashboard',
 			'id'            => 'homepage-widgets',
 			'description'   => '',
 			'before_widget' => '<aside id="%1$s" class="home-widgets widget %2$s">',
@@ -90,7 +90,7 @@ class DunhakdisWidgets {
 	}
 
 	public function registerCustomizer($wp_customize) {
-		
+
 		$this->registerCustomizerSettings('widgets', $wp_customize);
 
 		return $this;
@@ -104,7 +104,7 @@ class DunhakdisWidgets {
 	}
 
 	public function applyCSS( $identifier, $attrib, $value ) {
-		
+
 		$css = '';
 
 		if ( empty( $value ) || empty( $attrib ) || empty( $identifier ) ) {
@@ -120,15 +120,15 @@ class DunhakdisWidgets {
 	public function stylesheet() {
 
 		$style = "<style>";
-		
+
 		$theme_mod_outline = get_theme_mod( 'thrive_widgets_outline', 'shadowed' );
 
 		$outline = "";
-		
+
 		if ( $theme_mod_outline === 'solid-border' ) {
 			$outline = "none; border: 1px solid rgba(0, 0, 0, 0.12);"; //$dark_text
 		}
-		
+
 		if ( $theme_mod_outline === 'no-outline' ) {
 			$outline = "none; border: none;";
 		}
