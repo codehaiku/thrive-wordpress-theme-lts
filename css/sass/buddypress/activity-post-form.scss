@@ -13,6 +13,10 @@
 	min-height: 50px;
 }
 
+.buddypress #whats-new-options {
+	display: none;
+}
+
 .buddypress #item-body #whats-new-form{
 
 	margin-bottom: 20px;
@@ -112,7 +116,11 @@
 	}
 
 	#whats-new-textarea textarea {
-		min-height: 50px!important; //prevent buddypress from adjusting the height of our textarea to 20px;
+		min-height: 70px!important; //prevent buddypress from adjusting the height of our textarea to 20px;
+		background: #E0E0E0;
+	    padding: 10px;
+	    border-radius: 5px;
+	    box-shadow: inset 1px 1px 5px #BDBDBD;
 	}
 
 	#whats-new-options {
