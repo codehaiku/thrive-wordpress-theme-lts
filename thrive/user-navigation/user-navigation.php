@@ -19,9 +19,11 @@ if ( ! function_exists( 'thrive_user_nav' ) ) {
 					<?php _e( 'Sign-in', 'thrive' ); ?>
 				</a>
 
-				<a title="<?php _e( 'Create account to get started', 'thrive' ); ?>" href="<?php echo esc_url( wp_registration_url() ); ?>" class="button">
-					<?php _e( 'Register', 'thrive' ); ?>
-				</a>
+                <?php if ( get_option( 'users_can_register' ) ) { ?>
+    				<a title="<?php _e( 'Create account to get started', 'thrive' ); ?>" href="<?php echo esc_url( wp_registration_url() ); ?>" class="button">
+    					<?php _e( 'Register', 'thrive' ); ?>
+    				</a>
+                <?php } ?>
 
 			</div>
 
