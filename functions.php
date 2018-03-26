@@ -53,6 +53,9 @@ if ( ! function_exists( 'thrive_setup' ) ) :
 		 * Support WooCommerce.
 		 */
 		add_theme_support( 'woocommerce' );
+        add_theme_support( 'wc-product-gallery-zoom' );
+        add_theme_support( 'wc-product-gallery-lightbox' );
+        add_theme_support( 'wc-product-gallery-slider' );
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
