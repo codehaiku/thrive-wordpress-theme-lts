@@ -205,6 +205,22 @@ add_filter( 'bp_is_profile_cover_image_active', '__return_false' );
 add_filter( 'bp_is_groups_cover_image_active', '__return_false' );
 
 /**
+ * Require the custom bp nav
+ */
+require get_template_directory() . '/inc/thrive-bp-nav.php';
+
+/**
+ * Require the custom bp notification
+ */
+require get_template_directory() . '/inc/thrive-bp-notifications.php';
+
+/**
+ * Require the custom bp messages
+ */
+require get_template_directory() . '/inc/thrive-bp-messages.php';
+
+
+/**
  * Require the menu
  */
 require get_template_directory() . '/thrive/thrive.php';
