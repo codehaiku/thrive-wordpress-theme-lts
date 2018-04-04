@@ -116,12 +116,15 @@ if ( ! function_exists( 'thrive_user_nav' ) ) {
 
 					<div class="user-notifications">
 						<?php if ( bp_has_notifications() ) : ?>
-							<ul id="notifications-ul">
-								<?php while ( bp_the_notifications() ) : bp_the_notification(); ?>
-									<li>
-										<?php bp_the_notification_description();  ?>
-									</li>
-								<?php endwhile; ?>
+
+                            <?php $user_notifications = thrive_bp_get_the_notifications_description(); ?>
+
+                            <ul id="notifications-ul">
+                                <?php foreach ( $user_notifications as $user_notification ) { ?>
+                                    <li>
+                                        <?php echo $user_notification; ?>
+                                    </li>
+                                <?php } ?>
 							</ul>
 						<?php endif; ?>
 					</div>
@@ -202,7 +205,8 @@ if ( ! function_exists( 'thrive_user_nav' ) ) {
 							<i class="material-icons md-24">menu</i>
 						</a>
 						<div class="user-notifications" id="navigation">
-							<?php thrive_bp_nav_menu(); ?>
+							<?php //thrive_bp_nav_menu(); ?>
+							<?php thrive_bp_navigation(); ?>
 						</div>
 					</li>
 				<?php } else { ?>
@@ -429,4 +433,36 @@ function thrive_bp_nav_menu() {
 
 		//thrive_pre( $bp_menu );
 }
-?>
+
+function thrive_bp_navigation() {
+    if ( !function_exists('buddypress') ) {
+        return;
+    }
+
+    $bp_navigation = thrive_bp_component_nav_setup();
+    $current_component = bp_current_component();
+    $class = '';
+    ?>
+    <ul>
+        <?php foreach ( $bp_navigation as $menu ) {
+
+            $class = '';
+
+            if ( $current_component == $menu['slug'] ) {
+                $class = 'current-menu-item';
+            }
+
+            if( true === $menu['primary'] ) { ?>
+                    <li id="<?php echo esc_attr( $menu['css_id'] ) ?>" class="menu-parent <?php echo esc_attr( $class ); ?>">
+                        <a href="<?php echo esc_url( $menu['link'] ) ?>">
+                            <?php echo $menu['component_label']; ?>
+                        </a>
+                        <ul class="sub-menu">
+                            <?php thrive_bp_get_sub_nav( $menu['slug'] ); ?>
+                        </ul>
+                    </li>
+            <?php }
+        } ?>
+        <?php thrive_usernav_logout_link(); ?>
+    </ul>
+<?php }
