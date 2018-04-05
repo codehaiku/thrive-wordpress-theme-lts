@@ -41,7 +41,7 @@ jQuery(document).ready(function($){
 	$('textarea').autogrow({
 		animate: false
 	}).focus( function(){
-		// Fix the bug which causes the textarea to return to 
+		// Fix the bug which causes the textarea to return to
 		// its original size when focus out and focus in
         $( this ).stop().slideDown();
     });
@@ -66,6 +66,17 @@ jQuery(document).ready(function($){
 		});
 	});
 
+	/**
+	 * SideNav Sidebar
+	 */
+     localStorage.setItem("isSideNavSidebarClose", false);
+     var is_sidenav_close = localStorage.getItem("isSideNavSidebarClose");
+
+     $('#toggle-add').click(function(e){
+         e.preventDefault();
+         $('#thrive-global-wrapper').toggleClass('toggled');
+     });
+     console.log(is_sidenav_close);
 	/**
 	 * Couses Masonry
 	 */
