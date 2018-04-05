@@ -46,8 +46,8 @@ add_action( 'login_enqueue_scripts', 'thrive_login_stylesheet' );
 function thrive_login_stylesheet() {
 
     wp_enqueue_script('jquery');
-    wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/css/wp-login.css' );
-    wp_enqueue_script( 'custom-login', get_stylesheet_directory_uri() . '/js/wp-login.js' );
+    wp_enqueue_style( 'custom-login', get_template_directory_uri() . '/css/wp-login.css' );
+    wp_enqueue_script( 'custom-login', get_template_directory_uri() . '/js/wp-login.js' );
 
     return;
 }
