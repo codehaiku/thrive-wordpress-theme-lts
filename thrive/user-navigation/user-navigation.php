@@ -155,43 +155,23 @@ if ( ! function_exists( 'thrive_user_nav' ) ) {
 
 					<div id="message-notification" class="user-notifications">
 
-						<?php if ( bp_has_message_threads( 'type=unread' ) ) : ?>
-							<div id="thrive-user-nav-messages-head">
-								<?php _e('Messages', 'thrive'); ?>
-							</div>
-							<ul id="thrive-user-nav-messages">
-								<?php while ( bp_message_threads() ) { ?>
-								<?php bp_message_thread(); ?>
-								<li>
-									<a class="message-item-link" href="<?php echo esc_url( bp_message_thread_view_link() );?>" title="<?php echo sprintf( __( '%s &raquo; Read message ', 'thrive' ), bp_get_message_thread_subject() ); ?>">
-										<div class="row">
-											<div class="col-xs-2 messages-avatar">
-												<?php bp_message_thread_avatar();  ?>
-											</div>
-											<div class="col-xs-10 messages-details">
-												<h5><?php bp_message_thread_subject(); ?></h5>
-												<p>
-													<?php bp_message_thread_excerpt(); ?>
-												</p>
-											</div>
-										</div>
-									</a>
-								</li>
-								<?php } ?>
-							</ul>
-							<div class="clearfix"></div>
+						<div id="thrive-user-nav-messages-head">
+							<?php _e('Messages', 'thrive'); ?>
+						</div>
+						<ul id="thrive-user-nav-messages">
+                            <?php thrive_bp_users_messages(); ?>
+						</ul>
+						<div class="clearfix"></div>
 
-							<div id="thrive-user-nav-messages-footer">
+						<div id="thrive-user-nav-messages-footer">
 
-								<?php $messages_link = trailingslashit( bp_loggedin_user_domain() . bp_get_messages_slug() . '/inbox' ); ?>
+							<?php $messages_link = trailingslashit( bp_loggedin_user_domain() . bp_get_messages_slug() . '/inbox' ); ?>
 
-								<a href="<?php echo esc_url( $messages_link ); ?>" title="<?php _e('See All Messages', 'thrive'); ?>">
-									<?php _e('See All Messages', 'thrive'); ?>
-								</a>
+							<a href="<?php echo esc_url( $messages_link ); ?>" title="<?php _e('See All Messages', 'thrive'); ?>">
+								<?php _e('See All Messages', 'thrive'); ?>
+							</a>
 
-							</div>
-
-						<?php endif; ?>
+						</div>
 					</div><!--#message-notification-->
 					<?php } ?>
 
