@@ -219,6 +219,11 @@ require get_template_directory() . '/inc/bp-functions/thrive-bp-notifications.ph
  */
 require get_template_directory() . '/inc/bp-functions/thrive-bp-messages.php';
 
+/**
+ * Require the cookies for Thrive
+ */
+require get_template_directory() . '/inc/thrive-cookies/thrive-sidenav-cookies.php';
+
 
 /**
  * Require the menu
