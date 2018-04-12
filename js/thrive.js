@@ -66,17 +66,20 @@ jQuery(document).ready(function($){
 		});
 	});
 
-	/**
-	 * SideNav Sidebar
-	 */
-     localStorage.setItem("isSideNavSidebarClose", false);
-     var is_sidenav_close = localStorage.getItem("isSideNavSidebarClose");
+    /**
+     * SideNav Sidebar
+     * Creates cookie for the SideNav Sidebar last state
+     */
+    $('#page-sidebar-toggle').click(function(e){
+        e.preventDefault();
+        $.cookie( 'isSideNavSidebarClose', true, { expires: 7, path: '/' } );
+    });
 
-     $('#toggle-add').click(function(e){
-         e.preventDefault();
-         $('#thrive-global-wrapper').toggleClass('toggled');
-     });
-     console.log(is_sidenav_close);
+    $('#toggle-add').click(function(e){
+        e.preventDefault();
+        $.cookie( 'isSideNavSidebarClose', false, { expires: 7, path: '/' } );
+    });
+
 	/**
 	 * Couses Masonry
 	 */
