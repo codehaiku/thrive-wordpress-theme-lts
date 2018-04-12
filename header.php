@@ -33,7 +33,7 @@
 
 <body <?php body_class( array('thrive-inline') ); ?>>
 
-<div id="thrive-global-wrapper" class="active">
+<div id="thrive-global-wrapper" class="active <?php echo esc_attr( thrive_get_sidenav_state() ); ?>">
 
 <?php $layout = thrive_customizer_radio_mod('thrive_layouts_customize', '2_columns'); ?>
 
