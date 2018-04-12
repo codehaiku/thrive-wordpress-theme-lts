@@ -88,6 +88,7 @@ body.thrive-layout-2_columns {
    		 animation-delay: 0.65s;
 
 	   	@media ( min-width: 768px ) {
+            visibility: hidden;
 	   	 	opacity: 0;
 	    	left: 0;
 	   	}
@@ -122,6 +123,7 @@ body.thrive-layout-2_columns {
 	    &.toggled {
 
 	    	a#toggle-add {
+                visibility: visible;
 	    		opacity: 1;
 	    		left: auto;
 	    		@media( max-width: 768px ) {
