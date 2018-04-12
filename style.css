@@ -1690,8 +1690,10 @@ body.thrive-inline a.delete-doc-button,
   .woocommerce a.added_to_cart:hover,
   .woocommerce a.button.wc-backward:hover,
   .woocommerce #respond input#submit:hover,
+  .woocommerce #respond input#submit.alt:hover,
   .woocommerce a.button.alt:hover,
   .woocommerce button.button.alt:hover,
+  .woocommerce input.button.alt:hover,
   .woocommerce input.button:hover,
   .woocommerce div.product form.cart .button:hover,
   #site-user-updates #user-nav-user-action a.button:hover,
@@ -1779,12 +1781,13 @@ body.thrive-inline a.delete-doc-button,
   .thrive-inline.woocommerce-cart .wc-proceed-to-checkout a.checkout-button:disabled:hover,
   .thrive-inline .woocommerce a.button:disabled:hover,
   .woocommerce .widget_price_filter .price_slider_amount .button:disabled:hover,
-  a.button.checkout.wc-forward:disabled:hover,
+  a.button.wc-forward:disabled:hover,
   .woocommerce a.added_to_cart:disabled:hover,
   .woocommerce a.button.wc-backward:disabled:hover,
   .woocommerce #respond input#submit:disabled:hover,
   .woocommerce a.button.alt:disabled:hover,
   .woocommerce button.button.alt:disabled:hover,
+  .woocommerce input.button:disabled:hover,
   .woocommerce div.product form.cart .button:disabled:hover,
   #site-user-updates #user-nav-user-action a.button:disabled:hover,
   #doc-submit-options .action.safe:disabled,
@@ -1812,47 +1815,47 @@ body.thrive-inline a.delete-doc-button,
 
 .site-content a.ac-reply-cancel,
 .site-content .button,
-.site-content body.thrive-inline #wp-link-wrap.wp-core-ui form#wp-link .submitbox #wp-link-cancel button, body.thrive-inline #wp-link-wrap.wp-core-ui form#wp-link .submitbox #wp-link-cancel
-.site-content button,
-.site-content body.thrive-inline #wp-link-wrap.wp-core-ui form#wp-link .submitbox #wp-link-submit, body.thrive-inline #wp-link-wrap.wp-core-ui form#wp-link .submitbox
-.site-content #wp-link-submit,
-.site-content .gears-pricing-table .gears-pricing-table-btn .btn, .gears-pricing-table .gears-pricing-table-btn
-.site-content .btn,
-.site-content .widget.bbp_widget_login .bbp-logged-in a.logout-link, .widget.bbp_widget_login .bbp-logged-in
-.site-content a.logout-link,
-.site-content .widget.bbp_widget_login .bbp-login-form .bbp-submit-wrapper .user-submit, .widget.bbp_widget_login .bbp-login-form .bbp-submit-wrapper
-.site-content .user-submit,
-.site-content .widget.bbp_widget_login .bbp-login-form .bbp-login-links .bbp-register-link, .widget.bbp_widget_login .bbp-login-form .bbp-login-links
-.site-content .bbp-register-link,
-.site-content .thrive-inline .products .product .add_to_cart_button, .thrive-inline .products .product
-.site-content .add_to_cart_button,
-.site-content .thrive-inline.woocommerce-cart input.button, .thrive-inline.woocommerce-cart
-.site-content input.button,
-.site-content .thrive-inline.woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .thrive-inline.woocommerce-cart .wc-proceed-to-checkout
-.site-content a.checkout-button,
-.site-content .thrive-inline .woocommerce a.button, .thrive-inline .woocommerce
-.site-content a.button,
-.site-content .woocommerce .widget_price_filter .price_slider_amount .button, .woocommerce .widget_price_filter .price_slider_amount
-.site-content .button,
+.site-content body.thrive-inline #wp-link-wrap.wp-core-ui form#wp-link .submitbox #wp-link-cancel button,
+body.thrive-inline #wp-link-wrap.wp-core-ui form#wp-link .submitbox #wp-link-cancel .site-content button,
+.site-content body.thrive-inline #wp-link-wrap.wp-core-ui form#wp-link .submitbox #wp-link-submit,
+body.thrive-inline #wp-link-wrap.wp-core-ui form#wp-link .submitbox .site-content #wp-link-submit,
+.site-content .gears-pricing-table .gears-pricing-table-btn .btn,
+.gears-pricing-table .gears-pricing-table-btn .site-content .btn,
+.site-content .widget.bbp_widget_login .bbp-logged-in a.logout-link,
+.widget.bbp_widget_login .bbp-logged-in .site-content a.logout-link,
+.site-content .widget.bbp_widget_login .bbp-login-form .bbp-submit-wrapper .user-submit,
+.widget.bbp_widget_login .bbp-login-form .bbp-submit-wrapper .site-content .user-submit,
+.site-content .widget.bbp_widget_login .bbp-login-form .bbp-login-links .bbp-register-link,
+.widget.bbp_widget_login .bbp-login-form .bbp-login-links .site-content .bbp-register-link,
+.site-content .thrive-inline .products .product .add_to_cart_button,
+.thrive-inline .products .product .site-content .add_to_cart_button,
+.site-content .thrive-inline.woocommerce-cart input.button,
+.thrive-inline.woocommerce-cart .site-content input.button,
+.site-content .thrive-inline.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+.thrive-inline.woocommerce-cart .wc-proceed-to-checkout .site-content a.checkout-button,
+.site-content .thrive-inline .woocommerce a.button,
+.thrive-inline .woocommerce .site-content a.button,
+.site-content .woocommerce .widget_price_filter .price_slider_amount .button,
+.woocommerce .widget_price_filter .price_slider_amount .site-content .button,
 .site-content a.button.wc-forward,
-.site-content .woocommerce a.added_to_cart, .woocommerce
-.site-content a.added_to_cart,
-.site-content .woocommerce a.button.wc-backward, .woocommerce
-.site-content a.button.wc-backward,
-.site-content .woocommerce #respond input#submit, .woocommerce #respond
-.site-content input#submit,
-.site-content .woocommerce a.button.alt, .woocommerce
-.site-content a.button.alt,
-.site-content .woocommerce button.button.alt, .woocommerce
-.site-content button.button.alt,
-.site-content .woocommerce input.button, .woocommerce
-.site-content input.button,
-.site-content .woocommerce div.product form.cart .button, .woocommerce div.product form.cart
-.site-content .button,
-.site-content .woocommerce #respond input#submit.alt:hover, .woocommerce #respond
-.site-content input#submit.alt:hover,
-.site-content #site-user-updates #user-nav-user-action a.button, #site-user-updates #user-nav-user-action
-.site-content a.button {
+.site-content .woocommerce a.added_to_cart,
+.woocommerce .site-content a.added_to_cart,
+.site-content .woocommerce a.button.wc-backward,
+.woocommerce .site-content a.button.wc-backward,
+.site-content .woocommerce #respond input#submit,
+.woocommerce #respond .site-content input#submit,
+.site-content .woocommerce a.button.alt,
+.woocommerce .site-content a.button.alt,
+.site-content .woocommerce button.button.alt,
+.woocommerce .site-content button.button.alt,
+.site-content .woocommerce input.button,
+.woocommerce .site-content input.button,
+.site-content .woocommerce div.product form.cart .button,
+.woocommerce div.product form.cart .site-content .button,
+.site-content .woocommerce #respond input#submit.alt:hover,
+.woocommerce #respond .site-content input#submit.alt:hover,
+.site-content #site-user-updates #user-nav-user-action a.button,
+#site-user-updates #user-nav-user-action .site-content a.button {
   color: white; }
 
 .content-area fieldset ul, .content-area fieldset ol {
@@ -4988,10 +4991,10 @@ ul.docs-folder-manage {
   font-weight: 400;
   box-shadow: 0 1.5px 1px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.12);
   margin-top: 0; }
-  .thrive-inline #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, .thrive-inline #tribe-events .tribe-events-button:hover, #tribe-events .thrive-inline .tribe-events-button:hover, .thrive-inline .tribe-events-button:hover {
+  .thrive-inline #tribe-bar-form .tribe-bar-submit input:hover[type=submit], .thrive-inline #tribe-events .tribe-events-button:hover, #tribe-events .thrive-inline .tribe-events-button:hover, .thrive-inline .tribe-events-button:hover {
     color: #fff;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16); }
-  .thrive-inline #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, .thrive-inline #tribe-events .tribe-events-button:focus, #tribe-events .thrive-inline .tribe-events-button:focus, .thrive-inline .tribe-events-button:focus {
+  .thrive-inline #tribe-bar-form .tribe-bar-submit input:focus[type=submit], .thrive-inline #tribe-events .tribe-events-button:focus, #tribe-events .thrive-inline .tribe-events-button:focus, .thrive-inline .tribe-events-button:focus {
     outline: 0;
     color: #fff;
     box-shadow: 0 1.5px 1px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.12); }
@@ -5292,7 +5295,7 @@ ul.docs-folder-manage {
   width: 49%;
   display: block !important; }
 
-#tribe-events .thrive-inline #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, .thrive-inline #tribe-bar-form .tribe-bar-submit #tribe-events input[type=submit]:hover, #tribe-events .tribe-events-button:hover, .thrive-inline #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, #tribe-events .tribe-events-button:hover, .tribe-events-button:hover {
+#tribe-events .thrive-inline #tribe-bar-form .tribe-bar-submit input:hover[type=submit], .thrive-inline #tribe-bar-form .tribe-bar-submit #tribe-events input:hover[type=submit], #tribe-events .tribe-events-button:hover, .thrive-inline #tribe-bar-form .tribe-bar-submit input:hover[type=submit], #tribe-events .tribe-events-button:hover, .tribe-events-button:hover {
   background-color: #0288D1; }
 
 .single-tribe_events .tribe-events-schedule .tribe-events-divider {
@@ -5560,15 +5563,11 @@ ul.docs-folder-manage {
 
 #tribe-events-content .tribe-events-event-meta {
   margin: 15px 0; }
-  #tribe-events-content .tribe-events-event-meta.primary, #tribe-events-content a.tribe-events-event-meta, #tribe-events-content .subway-login-form .subway-login-lost-password a.tribe-events-event-meta, .subway-login-form .subway-login-lost-password #tribe-events-content a.tribe-events-event-meta, #tribe-events-content
-  .subway-login-form .login-remember label.tribe-events-event-meta,
-  .subway-login-form .login-remember #tribe-events-content label.tribe-events-event-meta, #tribe-events-content #secondary-menu ul li a.tribe-events-event-meta:hover, #secondary-menu ul li #tribe-events-content a.tribe-events-event-meta:hover, #tribe-events-content .user-notification-personal li a.tribe-events-event-meta:hover, .user-notification-personal li #tribe-events-content a.tribe-events-event-meta:hover, #tribe-events-content
-  ul#notifications-ul li a.tribe-events-event-meta:hover,
-  ul#notifications-ul li #tribe-events-content a.tribe-events-event-meta:hover, #tribe-events-content .tribe-events-list .type-tribe_events h2 a.tribe-events-event-meta, .tribe-events-list .type-tribe_events h2 #tribe-events-content a.tribe-events-event-meta, #tribe-events-content .bboss_search_page .search_filters ul li.current a.tribe-events-event-meta, .bboss_search_page .search_filters ul li.current #tribe-events-content a.tribe-events-event-meta, #tribe-events-content .bboss_search_page .search_filters ul li.active a.tribe-events-event-meta, .bboss_search_page .search_filters ul li.active #tribe-events-content a.tribe-events-event-meta, #tribe-events-content .bboss_search_page .search_filters ul li a.tribe-events-event-meta:hover, .bboss_search_page .search_filters ul li #tribe-events-content a.tribe-events-event-meta:hover, #tribe-events-content .woocommerce div.product p.tribe-events-event-meta.price, .woocommerce div.product #tribe-events-content p.tribe-events-event-meta.price, #tribe-events-content .woocommerce div.product span.tribe-events-event-meta.price, .woocommerce div.product #tribe-events-content span.tribe-events-event-meta.price, #tribe-events-content
-  .woocommerce .star-rating span.tribe-events-event-meta,
-  .woocommerce .star-rating #tribe-events-content span.tribe-events-event-meta, #tribe-events-content
-  .thrive-inline.woocommerce-page .tribe-events-event-meta.star-rating,
-  .thrive-inline.woocommerce-page #tribe-events-content .tribe-events-event-meta.star-rating, #tribe-events-content .thrive-inline.woocommerce .tribe-events-event-meta.star-rating, .thrive-inline.woocommerce #tribe-events-content .tribe-events-event-meta.star-rating, #tribe-events-content .woocommerce .tribe-events-event-meta.star-rating:before, .woocommerce #tribe-events-content .tribe-events-event-meta.star-rating:before, #tribe-events-content #thrive-wisechat-support .wcControlsButtonsIncluded a.tribe-events-event-meta.wcAddImageAttachment:before, #thrive-wisechat-support .wcControlsButtonsIncluded #tribe-events-content a.tribe-events-event-meta.wcAddImageAttachment:before, #tribe-events-content .thrive-inline .wcContainer a.tribe-events-event-meta.wcAddImageAttachment:before, .thrive-inline .wcContainer #tribe-events-content a.tribe-events-event-meta.wcAddImageAttachment:before, #tribe-events-content body.thrive-layout-2_columns #sidebar-wrapper.dark #page-sidebar-menu #secondary-menu-links .menu-item.current-menu-item a.tribe-events-event-meta, body.thrive-layout-2_columns #sidebar-wrapper.dark #page-sidebar-menu #secondary-menu-links .menu-item.current-menu-item #tribe-events-content a.tribe-events-event-meta, #tribe-events-content #page-sidenav #page-sidebar-menu ul#secondary-menu-links .menu-item a.tribe-events-event-meta:hover, #page-sidenav #page-sidebar-menu ul#secondary-menu-links .menu-item #tribe-events-content a.tribe-events-event-meta:hover, #tribe-events-content #page-sidenav #page-sidebar-menu ul#secondary-menu-links .menu-item.current-menu-item a.tribe-events-event-meta, #page-sidenav #page-sidebar-menu ul#secondary-menu-links .menu-item.current-menu-item #tribe-events-content a.tribe-events-event-meta, #tribe-events-content .tribe-events-event-meta.secondary, #tribe-events-content .bboss_search_page .search_filters ul li a .tribe-events-event-meta.count, .bboss_search_page .search_filters ul li a #tribe-events-content .tribe-events-event-meta.count {
+  #tribe-events-content .tribe-events-event-meta.primary, #tribe-events-content a.tribe-events-event-meta, #tribe-events-content .subway-login-form .subway-login-lost-password a.tribe-events-event-meta, .subway-login-form .subway-login-lost-password #tribe-events-content a.tribe-events-event-meta,
+  #tribe-events-content .subway-login-form .login-remember label.tribe-events-event-meta, .subway-login-form .login-remember #tribe-events-content label.tribe-events-event-meta, #tribe-events-content #secondary-menu ul li a.tribe-events-event-meta:hover, #secondary-menu ul li #tribe-events-content a.tribe-events-event-meta:hover, #tribe-events-content .user-notification-personal li a.tribe-events-event-meta:hover, .user-notification-personal li #tribe-events-content a.tribe-events-event-meta:hover,
+  #tribe-events-content ul#notifications-ul li a.tribe-events-event-meta:hover, ul#notifications-ul li #tribe-events-content a.tribe-events-event-meta:hover, #tribe-events-content .tribe-events-list .type-tribe_events h2 a.tribe-events-event-meta, .tribe-events-list .type-tribe_events h2 #tribe-events-content a.tribe-events-event-meta, #tribe-events-content .bboss_search_page .search_filters ul li.current a.tribe-events-event-meta, .bboss_search_page .search_filters ul li.current #tribe-events-content a.tribe-events-event-meta, #tribe-events-content .bboss_search_page .search_filters ul li.active a.tribe-events-event-meta, .bboss_search_page .search_filters ul li.active #tribe-events-content a.tribe-events-event-meta, #tribe-events-content .bboss_search_page .search_filters ul li a.tribe-events-event-meta:hover, .bboss_search_page .search_filters ul li #tribe-events-content a.tribe-events-event-meta:hover, #tribe-events-content .woocommerce div.product p.tribe-events-event-meta.price, .woocommerce div.product #tribe-events-content p.tribe-events-event-meta.price, #tribe-events-content .woocommerce div.product span.tribe-events-event-meta.price, .woocommerce div.product #tribe-events-content span.tribe-events-event-meta.price,
+  #tribe-events-content .woocommerce .star-rating span.tribe-events-event-meta, .woocommerce .star-rating #tribe-events-content span.tribe-events-event-meta,
+  #tribe-events-content .thrive-inline.woocommerce-page .tribe-events-event-meta.star-rating, .thrive-inline.woocommerce-page #tribe-events-content .tribe-events-event-meta.star-rating, #tribe-events-content .thrive-inline.woocommerce .tribe-events-event-meta.star-rating, .thrive-inline.woocommerce #tribe-events-content .tribe-events-event-meta.star-rating, #tribe-events-content .woocommerce .tribe-events-event-meta.star-rating:before, .woocommerce #tribe-events-content .tribe-events-event-meta.star-rating:before, #tribe-events-content #thrive-wisechat-support .wcControlsButtonsIncluded a.tribe-events-event-meta.wcAddImageAttachment:before, #thrive-wisechat-support .wcControlsButtonsIncluded #tribe-events-content a.tribe-events-event-meta.wcAddImageAttachment:before, #tribe-events-content .thrive-inline .wcContainer a.tribe-events-event-meta.wcAddImageAttachment:before, .thrive-inline .wcContainer #tribe-events-content a.tribe-events-event-meta.wcAddImageAttachment:before, #tribe-events-content body.thrive-layout-2_columns #sidebar-wrapper.dark #page-sidebar-menu #secondary-menu-links .menu-item.current-menu-item a.tribe-events-event-meta, body.thrive-layout-2_columns #sidebar-wrapper.dark #page-sidebar-menu #secondary-menu-links .menu-item.current-menu-item #tribe-events-content a.tribe-events-event-meta, #tribe-events-content #page-sidenav #page-sidebar-menu ul#secondary-menu-links .menu-item a.tribe-events-event-meta:hover, #page-sidenav #page-sidebar-menu ul#secondary-menu-links .menu-item #tribe-events-content a.tribe-events-event-meta:hover, #tribe-events-content #page-sidenav #page-sidebar-menu ul#secondary-menu-links .menu-item.current-menu-item a.tribe-events-event-meta, #page-sidenav #page-sidebar-menu ul#secondary-menu-links .menu-item.current-menu-item #tribe-events-content a.tribe-events-event-meta, #tribe-events-content .tribe-events-event-meta.secondary, #tribe-events-content .bboss_search_page .search_filters ul li a .tribe-events-event-meta.count, .bboss_search_page .search_filters ul li a #tribe-events-content .tribe-events-event-meta.count {
     color: #444; }
   #tribe-events-content .tribe-events-event-meta .tribe-event-date-start {
     font-size: 14px; }
@@ -9324,7 +9323,8 @@ button#rtmedia-add-media-button-post-update .dashicons {
 
 .thrive-inline .rtm-tabs,
 .thrive-inline .rtm-tabs li,
-.thrive-inline #rtmedia-no-comments, .thrive-inline .rtmedia-like-info,
+.thrive-inline #rtmedia-no-comments,
+.thrive-inline .rtmedia-like-info,
 .thrive-inline .thrive-inline .rtm-comment-list .rtmedia-no-comments,
 .thrive-inline .thrive-inline .rtmedia-like-info {
   list-style: none; }
@@ -9374,7 +9374,9 @@ button#rtmedia-add-media-button-post-update .dashicons {
 .thrive-inline .rtm-like-comments-info:after {
   display: none; }
 
-.thrive-inline #rtmedia-no-comments, .thrive-inline .rtmedia-like-info {
+
+.thrive-inline #rtmedia-no-comments,
+.thrive-inline .rtmedia-like-info {
   clear: both;
   padding: 10px 10px 10px 39px;
   margin: 10px 0;
@@ -10164,6 +10166,7 @@ body.thrive-layout-2_columns a#toggle-add {
   animation-delay: 0.65s; }
   @media (min-width: 768px) {
     body.thrive-layout-2_columns a#toggle-add {
+      visibility: hidden;
       opacity: 0;
       left: 0; } }
 
@@ -10192,6 +10195,7 @@ body.thrive-layout-2_columns #thrive-global-wrapper {
   -o-transition: padding-left 0.5s ease;
   transition: padding-left 0.5s ease; }
   body.thrive-layout-2_columns #thrive-global-wrapper.toggled a#toggle-add {
+    visibility: visible;
     opacity: 1;
     left: auto; }
     @media (max-width: 768px) {
