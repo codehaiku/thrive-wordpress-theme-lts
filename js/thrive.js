@@ -41,7 +41,7 @@ jQuery(document).ready(function($){
 	$('textarea').autogrow({
 		animate: false
 	}).focus( function(){
-		// Fix the bug which causes the textarea to return to 
+		// Fix the bug which causes the textarea to return to
 		// its original size when focus out and focus in
         $( this ).stop().slideDown();
     });
@@ -65,6 +65,20 @@ jQuery(document).ready(function($){
 			itemSelector: '.rtmedia-list-item',
 		});
 	});
+
+    /**
+     * SideNav Sidebar
+     * Creates cookie for the SideNav Sidebar last state
+     */
+    $('#page-sidebar-toggle').click(function(e){
+        e.preventDefault();
+        $.cookie( 'isSideNavSidebarClose', true, { expires: 7, path: '/' } );
+    });
+
+    $('#toggle-add').click(function(e){
+        e.preventDefault();
+        $.cookie( 'isSideNavSidebarClose', false, { expires: 7, path: '/' } );
+    });
 
 	/**
 	 * Couses Masonry
