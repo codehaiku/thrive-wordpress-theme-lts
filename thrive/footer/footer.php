@@ -52,7 +52,7 @@ class DunhakdisFooter {
 		$column_class = sprintf('footer-widget footer-widgets-%s', $columns);
 
 		register_sidebar( array(
-			'name'          => esc_html__( 'Footer', 'thrive' ),
+			'name'          => 'Footer',
 			'id'            => 'sidebar-footer-area',
 			'description'   => '',
 			'before_widget' => '<div class="col-sm-6 '.$column_class.' col-md-'.esc_attr($col_number).'"><aside id="%1$s" class="widget %2$s">',

@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Thrive English Default\n"
-"POT-Creation-Date: 2017-02-01 18:18+0800\n"
-"PO-Revision-Date: 2017-02-01 18:32+0800\n"
+"POT-Creation-Date: 2018-01-16 15:07+0800\n"
+"PO-Revision-Date: 2018-01-16 15:07+0800\n"
 "Last-Translator: \n"
 "Language-Team: Dunhakdis Software Creatives <info@dunhakdis.com>\n"
 "Language: en_BS\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 2.0.2\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e;esc_attr_e;_n;_x;_ex;_nx;"
@@ -28,11 +28,11 @@ msgid ""
 "below or a search?"
 msgstr ""
 
-#: archive.php:38 inc/template-tags.php:211 thrive/widgets/widgets.php:70
+#: archive.php:37 inc/template-tags.php:211
 msgid "Archives"
 msgstr ""
 
-#: buddypress/activity/activity-loop.php:27 rtmedia/media/album-gallery.php:56
+#: buddypress/activity/activity-loop.php:27 rtmedia/media/album-gallery.php:57
 #: rtmedia/media/media-gallery.php:65
 msgid "Load More"
 msgstr ""
@@ -107,51 +107,50 @@ msgstr ""
 msgid "My Friends <span>%s</span>"
 msgstr ""
 
-#: buddypress/activity/index.php:83
+#: buddypress/activity/index.php:84
 msgid "The activity of groups I am a member of."
 msgstr ""
 
-#: buddypress/activity/index.php:83 buddypress/groups/index.php:46
+#: buddypress/activity/index.php:87 buddypress/groups/index.php:46
 #, php-format
 msgid "My Groups <span>%s</span>"
 msgstr ""
 
-#: buddypress/activity/index.php:100
+#: buddypress/activity/index.php:107
 msgid "The activity I've marked as a favorite."
 msgstr ""
 
-#: buddypress/activity/index.php:100
+#: buddypress/activity/index.php:107
 #, php-format
 msgid "My Favorites <span>%s</span>"
 msgstr ""
 
-#: buddypress/activity/index.php:115
+#: buddypress/activity/index.php:122
 msgid "Activity that I have been mentioned in."
 msgstr ""
 
-#: buddypress/activity/index.php:115
+#: buddypress/activity/index.php:123
 msgid "Mentions"
 msgstr ""
 
-#: buddypress/activity/index.php:115
-#, php-format
-msgid "%s new"
+#: buddypress/activity/index.php:127
+msgid "newt_bell(oid)"
 msgstr ""
 
-#: buddypress/activity/index.php:134 buddypress/groups/single/activity.php:3
+#: buddypress/activity/index.php:154 buddypress/groups/single/activity.php:3
 msgid "RSS Feed"
 msgstr ""
 
-#: buddypress/activity/index.php:134 buddypress/groups/single/activity.php:3
+#: buddypress/activity/index.php:154 buddypress/groups/single/activity.php:3
 msgid "RSS"
 msgstr ""
 
-#: buddypress/activity/index.php:146 buddypress/groups/single/activity.php:15
+#: buddypress/activity/index.php:166 buddypress/groups/single/activity.php:15
 #: buddypress/members/single/activity.php:18
 msgid "Show:"
 msgstr ""
 
-#: buddypress/activity/index.php:148 buddypress/groups/single/activity.php:17
+#: buddypress/activity/index.php:168 buddypress/groups/single/activity.php:17
 #: buddypress/members/single/activity.php:20
 msgid "&mdash; Everything &mdash;"
 msgstr ""
@@ -173,76 +172,6 @@ msgstr ""
 #: buddypress/activity/post-form.php:60
 #: buddypress/members/single/profile/profile-wp.php:23
 msgid "My Profile"
-msgstr ""
-
-#: buddypress/assets/_attachments/avatars/camera.php:16
-msgid "Your browser does not support this feature."
-msgstr ""
-
-#: buddypress/assets/_attachments/avatars/camera.php:23
-msgid "Capture"
-msgstr ""
-
-#: buddypress/assets/_attachments/avatars/camera.php:24
-#: buddypress/members/single/settings/capabilities.php:23
-#: rtmedia/media/media-single-edit.php:46
-msgid "Save"
-msgstr ""
-
-#: buddypress/assets/_attachments/avatars/crop.php:22
-#: buddypress/groups/create.php:280
-#: buddypress/groups/single/admin/group-avatar.php:57
-#: buddypress/members/single/profile/change-avatar.php:46
-msgid "Crop Image"
-msgstr ""
-
-#: buddypress/assets/_attachments/avatars/index.php:37
-#: buddypress/members/single/profile/change-avatar.php:30
-msgid ""
-"If you'd like to delete your current profile photo but not upload a new one, "
-"please use the delete profile photo button."
-msgstr ""
-
-#: buddypress/assets/_attachments/avatars/index.php:38
-#: buddypress/members/single/profile/change-avatar.php:31
-msgid "Delete Profile Photo"
-msgstr ""
-
-#: buddypress/assets/_attachments/avatars/index.php:38
-#: buddypress/members/single/profile/change-avatar.php:31
-msgid "Delete My Profile Photo"
-msgstr ""
-
-#: buddypress/assets/_attachments/avatars/index.php:40
-#: buddypress/groups/single/admin/group-avatar.php:29
-msgid ""
-"If you'd like to remove the existing group profile photo but not upload a "
-"new one, please use the delete group profile photo button."
-msgstr ""
-
-#: buddypress/assets/_attachments/avatars/index.php:41
-#: buddypress/groups/single/admin/group-avatar.php:31
-msgid "Delete Group Profile Photo"
-msgstr ""
-
-#: buddypress/assets/_attachments/uploader.php:15
-msgid "The web browser on your device cannot be used to upload files."
-msgstr ""
-
-#: buddypress/assets/_attachments/uploader.php:17
-msgid "Upload Limit Exceeded"
-msgstr ""
-
-#: buddypress/assets/_attachments/uploader.php:22
-msgid "Drop your file here"
-msgstr ""
-
-#: buddypress/assets/_attachments/uploader.php:23
-msgid "or"
-msgstr ""
-
-#: buddypress/assets/_attachments/uploader.php:24
-msgid "Select your File"
 msgstr ""
 
 #: buddypress/blogs/blogs-loop.php:125
@@ -351,7 +280,7 @@ msgstr ""
 #: buddypress/groups/single/forum/edit.php:68
 #: thrive/theme-widgets/featured-group.php:123
 #: thrive/theme-widgets/featured-member.php:117
-#: thrive/theme-widgets/members-birthday.php:236
+#: thrive/theme-widgets/members-birthday.php:207
 msgid "Title:"
 msgstr ""
 
@@ -573,6 +502,12 @@ msgstr ""
 msgid "Profile photo preview"
 msgstr ""
 
+#: buddypress/groups/create.php:280
+#: buddypress/groups/single/admin/group-avatar.php:57
+#: buddypress/members/single/profile/change-avatar.php:46
+msgid "Crop Image"
+msgstr ""
+
 #: buddypress/groups/create.php:307
 msgid "Group Invites"
 msgstr ""
@@ -666,6 +601,16 @@ msgstr ""
 #: buddypress/members/single/settings/notifications.php:28
 #: rtmedia/media/album-single-edit.php:47
 msgid "Save Changes"
+msgstr ""
+
+#: buddypress/groups/single/admin/group-avatar.php:29
+msgid ""
+"If you'd like to remove the existing group profile photo but not upload a "
+"new one, please use the delete group profile photo button."
+msgstr ""
+
+#: buddypress/groups/single/admin/group-avatar.php:31
+msgid "Delete Group Profile Photo"
 msgstr ""
 
 #: buddypress/groups/single/admin/group-avatar.php:49
@@ -908,7 +853,7 @@ msgid "Activation Key:"
 msgstr ""
 
 #: buddypress/members/activate.php:46
-#: thrive/tgm/class-tgm-plugin-activation.php:2811
+#: thrive/tgm/class-tgm-plugin-activation.php:2726
 msgid "Activate"
 msgstr ""
 
@@ -1177,6 +1122,20 @@ msgid ""
 "then click 'Upload Image' to proceed."
 msgstr ""
 
+#: buddypress/members/single/profile/change-avatar.php:30
+msgid ""
+"If you'd like to delete your current profile photo but not upload a new one, "
+"please use the delete profile photo button."
+msgstr ""
+
+#: buddypress/members/single/profile/change-avatar.php:31
+msgid "Delete Profile Photo"
+msgstr ""
+
+#: buddypress/members/single/profile/change-avatar.php:31
+msgid "Delete My Profile Photo"
+msgstr ""
+
 #: buddypress/members/single/profile/change-avatar.php:38
 msgid "Crop Your New Profile Photo"
 msgstr ""
@@ -1245,6 +1204,11 @@ msgstr ""
 msgid "This user is a spammer."
 msgstr ""
 
+#: buddypress/members/single/settings/capabilities.php:23
+#: rtmedia/media/media-single-edit.php:46
+msgid "Save"
+msgstr ""
+
 #: buddypress/members/single/settings/delete-account.php:10
 msgid ""
 "Deleting your account will delete all of the content you have created. It "
@@ -1307,24 +1271,24 @@ msgstr ""
 msgid "Save Settings"
 msgstr ""
 
-#: comments.php:29
+#: comments.php:31
 #, php-format
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgstr ""
 
-#: comments.php:38 comments.php:60
+#: comments.php:46 comments.php:68
 msgid "Comment navigation"
 msgstr ""
 
-#: comments.php:41 comments.php:63
+#: comments.php:49 comments.php:71
 msgid "Older Comments"
 msgstr ""
 
-#: comments.php:42 comments.php:64
+#: comments.php:50 comments.php:72
 msgid "Newer Comments"
 msgstr ""
 
-#: comments.php:76
+#: comments.php:84
 msgid "Comments are closed."
 msgstr ""
 
@@ -1332,32 +1296,32 @@ msgstr ""
 msgid "&copy; [Your Website Name Here] 2015. All Rights Reserved."
 msgstr ""
 
-#: functions.php:115
+#: functions.php:122
 msgid "on"
 msgstr ""
 
-#: functions.php:228 functions.php:231
+#: functions.php:235 functions.php:238
 msgid "Social Connect "
 msgstr ""
 
-#: functions.php:234
+#: functions.php:241
 msgid "Thrive Social Connect "
 msgstr ""
 
-#: header.php:71 header.php:89
+#: header.php:70 header.php:88
 msgid "Toggle Sidebar"
 msgstr ""
 
-#: header.php:105
+#: header.php:104
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:130 searchform.php:12
+#: header.php:129 searchform.php:12
 #: thrive/user-navigation/user-navigation.php:55
 msgid "Search"
 msgstr ""
 
-#: header.php:136
+#: header.php:135
 msgid "Show Menu"
 msgstr ""
 
@@ -1384,46 +1348,46 @@ msgstr ""
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: inc/extras.php:201
+#: inc/extras.php:199
 msgid "Category"
 msgstr ""
 
-#: inc/extras.php:206
+#: inc/extras.php:204
 msgid "Tag"
 msgstr ""
 
-#: inc/extras.php:212
+#: inc/extras.php:210
 msgid "Author"
 msgstr ""
 
-#: inc/extras.php:226
+#: inc/extras.php:224
 msgid "Archive"
 msgstr ""
 
-#: inc/extras.php:244
+#: inc/extras.php:242
 msgid "Files"
 msgstr ""
 
-#: inc/extras.php:257
+#: inc/extras.php:255
 msgid "BuddyPress"
 msgstr ""
 
-#: inc/extras.php:258
+#: inc/extras.php:256
 #, php-format
 msgid ""
 "%s is not currently installed or activated. Thrive recommends that you "
 "install and activate %s plugin. Thank you :)"
 msgstr ""
 
-#: inc/extras.php:305
+#: inc/extras.php:310
 msgid "Chat"
 msgstr ""
 
-#: inc/extras.php:333
+#: inc/extras.php:338
 msgid "Media Updates"
 msgstr ""
 
-#: inc/extras.php:417 inc/extras.php:418
+#: inc/extras.php:422 inc/extras.php:423
 msgid "Settings"
 msgstr ""
 
@@ -1582,6 +1546,14 @@ msgstr ""
 msgid "Create or Assign a 'Primary' Menu"
 msgstr ""
 
+#: inc/wp-login-css.php:73
+msgid "Go back to main page"
+msgstr ""
+
+#: inc/wp-login-css.php:85
+msgid "Lost Password?"
+msgstr ""
+
 #: learndash/course_list_template.php:34
 msgid "See Course"
 msgstr ""
@@ -1607,7 +1579,7 @@ msgstr ""
 msgid "Album List"
 msgstr ""
 
-#: rtmedia/media/album-gallery.php:64 rtmedia/media/media-single-edit.php:61
+#: rtmedia/media/album-gallery.php:66 rtmedia/media/media-single-edit.php:61
 #: rtmedia/media/media-single.php:146
 msgid "Sorry !! There's no media found for the request !!"
 msgstr ""
@@ -1897,7 +1869,7 @@ msgstr ""
 msgid "Color"
 msgstr ""
 
-#: thrive/footer/footer.php:55 thrive/footer/footer.php:70
+#: thrive/footer/footer.php:70
 msgid "Footer"
 msgstr ""
 
@@ -2207,386 +2179,386 @@ msgid ""
 "is logged out."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:334
+#: thrive/tgm/class-tgm-plugin-activation.php:327
 msgid "Install Required Plugins"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:335
+#: thrive/tgm/class-tgm-plugin-activation.php:328
 msgid "Install Plugins"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:337
+#: thrive/tgm/class-tgm-plugin-activation.php:330
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:339
+#: thrive/tgm/class-tgm-plugin-activation.php:332
 #, php-format
 msgid "Updating Plugin: %s"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:340
+#: thrive/tgm/class-tgm-plugin-activation.php:333
 msgid "Something went wrong with the plugin API."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:343
+#: thrive/tgm/class-tgm-plugin-activation.php:336
 #, php-format
 msgid "This theme requires the following plugin: %1$s."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:349
+#: thrive/tgm/class-tgm-plugin-activation.php:342
 #, php-format
 msgid "This theme recommends the following plugin: %1$s."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:355
+#: thrive/tgm/class-tgm-plugin-activation.php:348
 #, php-format
 msgid ""
 "The following plugin needs to be updated to its latest version to ensure "
 "maximum compatibility with this theme: %1$s."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:361
+#: thrive/tgm/class-tgm-plugin-activation.php:354
 #, php-format
 msgid "There is an update available for: %1$s."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:367
+#: thrive/tgm/class-tgm-plugin-activation.php:360
 #, php-format
 msgid "The following required plugin is currently inactive: %1$s."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:373
+#: thrive/tgm/class-tgm-plugin-activation.php:366
 #, php-format
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:378
+#: thrive/tgm/class-tgm-plugin-activation.php:371
 msgid "Begin installing plugin"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:383
+#: thrive/tgm/class-tgm-plugin-activation.php:376
 msgid "Begin updating plugin"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:388
+#: thrive/tgm/class-tgm-plugin-activation.php:381
 msgid "Begin activating plugin"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:392
+#: thrive/tgm/class-tgm-plugin-activation.php:385
 msgid "Return to Required Plugins Installer"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:393
-#: thrive/tgm/class-tgm-plugin-activation.php:912
-#: thrive/tgm/class-tgm-plugin-activation.php:2618
-#: thrive/tgm/class-tgm-plugin-activation.php:3665
+#: thrive/tgm/class-tgm-plugin-activation.php:386
+#: thrive/tgm/class-tgm-plugin-activation.php:827
+#: thrive/tgm/class-tgm-plugin-activation.php:2533
+#: thrive/tgm/class-tgm-plugin-activation.php:3580
 msgid "Return to the Dashboard"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:394
-#: thrive/tgm/class-tgm-plugin-activation.php:3244
+#: thrive/tgm/class-tgm-plugin-activation.php:387
+#: thrive/tgm/class-tgm-plugin-activation.php:3159
 msgid "Plugin activated successfully."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:395
-#: thrive/tgm/class-tgm-plugin-activation.php:3037
+#: thrive/tgm/class-tgm-plugin-activation.php:388
+#: thrive/tgm/class-tgm-plugin-activation.php:2952
 msgid "The following plugin was activated successfully:"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:397
+#: thrive/tgm/class-tgm-plugin-activation.php:390
 #, php-format
 msgid "No action taken. Plugin %1$s was already active."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:399
+#: thrive/tgm/class-tgm-plugin-activation.php:392
 #, php-format
 msgid ""
 "Plugin not activated. A higher version of %s is needed for this theme. "
 "Please update the plugin."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:401
+#: thrive/tgm/class-tgm-plugin-activation.php:394
 #, php-format
 msgid "All plugins installed and activated successfully. %1$s"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:402
+#: thrive/tgm/class-tgm-plugin-activation.php:395
 msgid "Dismiss this notice"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:403
+#: thrive/tgm/class-tgm-plugin-activation.php:396
 msgid ""
 "There are one or more required or recommended plugins to install, update or "
 "activate."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:404
+#: thrive/tgm/class-tgm-plugin-activation.php:397
 msgid "Please contact the administrator of this site for help."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:607
+#: thrive/tgm/class-tgm-plugin-activation.php:522
 msgid "This plugin needs to be updated to be compatible with your theme."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:608
+#: thrive/tgm/class-tgm-plugin-activation.php:523
 msgid "Update Required"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:1019
+#: thrive/tgm/class-tgm-plugin-activation.php:934
 msgid ""
 "The remote plugin package does not contain a folder with the desired slug "
 "and renaming did not work."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:1019
-#: thrive/tgm/class-tgm-plugin-activation.php:1022
+#: thrive/tgm/class-tgm-plugin-activation.php:934
+#: thrive/tgm/class-tgm-plugin-activation.php:937
 msgid ""
 "Please contact the plugin provider and ask them to package their plugin "
 "according to the WordPress guidelines."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:1022
+#: thrive/tgm/class-tgm-plugin-activation.php:937
 msgid ""
 "The remote plugin package consists of more than one file, but the files are "
 "not packaged in a folder."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:1206
-#: thrive/tgm/class-tgm-plugin-activation.php:3033
+#: thrive/tgm/class-tgm-plugin-activation.php:1121
+#: thrive/tgm/class-tgm-plugin-activation.php:2948
 msgid "and"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2067
+#: thrive/tgm/class-tgm-plugin-activation.php:1982
 #, php-format
 msgid "TGMPA v%s"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2358
+#: thrive/tgm/class-tgm-plugin-activation.php:2273
 msgid "Required"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2361
+#: thrive/tgm/class-tgm-plugin-activation.php:2276
 msgid "Recommended"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2377
+#: thrive/tgm/class-tgm-plugin-activation.php:2292
 msgid "WordPress Repository"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2380
+#: thrive/tgm/class-tgm-plugin-activation.php:2295
 msgid "External Source"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2383
+#: thrive/tgm/class-tgm-plugin-activation.php:2298
 msgid "Pre-Packaged"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2400
+#: thrive/tgm/class-tgm-plugin-activation.php:2315
 msgid "Not Installed"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2404
+#: thrive/tgm/class-tgm-plugin-activation.php:2319
 msgid "Installed But Not Activated"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2406
+#: thrive/tgm/class-tgm-plugin-activation.php:2321
 msgid "Active"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2412
+#: thrive/tgm/class-tgm-plugin-activation.php:2327
 msgid "Required Update not Available"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2415
+#: thrive/tgm/class-tgm-plugin-activation.php:2330
 msgid "Requires Update"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2418
+#: thrive/tgm/class-tgm-plugin-activation.php:2333
 msgid "Update recommended"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2427
+#: thrive/tgm/class-tgm-plugin-activation.php:2342
 #, php-format
 msgid "%1$s, %2$s"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2473
+#: thrive/tgm/class-tgm-plugin-activation.php:2388
 #, php-format
 msgid "All <span class=\"count\">(%s)</span>"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2477
+#: thrive/tgm/class-tgm-plugin-activation.php:2392
 #, php-format
 msgid "To Install <span class=\"count\">(%s)</span>"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2481
+#: thrive/tgm/class-tgm-plugin-activation.php:2396
 #, php-format
 msgid "Update Available <span class=\"count\">(%s)</span>"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2485
+#: thrive/tgm/class-tgm-plugin-activation.php:2400
 #, php-format
 msgid "To Activate <span class=\"count\">(%s)</span>"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2567
+#: thrive/tgm/class-tgm-plugin-activation.php:2482
 msgid "unknown"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2575
+#: thrive/tgm/class-tgm-plugin-activation.php:2490
 msgid "Installed version:"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2583
+#: thrive/tgm/class-tgm-plugin-activation.php:2498
 msgid "Minimum required version:"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2595
+#: thrive/tgm/class-tgm-plugin-activation.php:2510
 msgid "Available version:"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2618
+#: thrive/tgm/class-tgm-plugin-activation.php:2533
 msgid "No plugins to install, update or activate."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2632
+#: thrive/tgm/class-tgm-plugin-activation.php:2547
 msgid "Plugin"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2633
+#: thrive/tgm/class-tgm-plugin-activation.php:2548
 msgid "Source"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2634
+#: thrive/tgm/class-tgm-plugin-activation.php:2549
 msgid "Type"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2638
+#: thrive/tgm/class-tgm-plugin-activation.php:2553
 msgid "Version"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2639
+#: thrive/tgm/class-tgm-plugin-activation.php:2554
 msgid "Status"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2688
+#: thrive/tgm/class-tgm-plugin-activation.php:2603
 #, php-format
 msgid "Install %2$s"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2693
+#: thrive/tgm/class-tgm-plugin-activation.php:2608
 #, php-format
 msgid "Update %2$s"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2699
+#: thrive/tgm/class-tgm-plugin-activation.php:2614
 #, php-format
 msgid "Activate %2$s"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2769
+#: thrive/tgm/class-tgm-plugin-activation.php:2684
 msgid "Upgrade message from the plugin author:"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2802
+#: thrive/tgm/class-tgm-plugin-activation.php:2717
 msgid "Install"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2808
+#: thrive/tgm/class-tgm-plugin-activation.php:2723
 msgid "Update"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2842
+#: thrive/tgm/class-tgm-plugin-activation.php:2757
 msgid "No plugins were selected to be installed. No action taken."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2844
+#: thrive/tgm/class-tgm-plugin-activation.php:2759
 msgid "No plugins were selected to be updated. No action taken."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2885
+#: thrive/tgm/class-tgm-plugin-activation.php:2800
 msgid "No plugins are available to be installed at this time."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2887
+#: thrive/tgm/class-tgm-plugin-activation.php:2802
 msgid "No plugins are available to be updated at this time."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:2993
+#: thrive/tgm/class-tgm-plugin-activation.php:2908
 msgid "No plugins were selected to be activated. No action taken."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:3019
+#: thrive/tgm/class-tgm-plugin-activation.php:2934
 msgid "No plugins are available to be activated at this time."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:3243
+#: thrive/tgm/class-tgm-plugin-activation.php:3158
 msgid "Plugin activation failed."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:3583
+#: thrive/tgm/class-tgm-plugin-activation.php:3498
 #, php-format
 msgid "Updating Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:3586
+#: thrive/tgm/class-tgm-plugin-activation.php:3501
 #, php-format
 msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:3588
+#: thrive/tgm/class-tgm-plugin-activation.php:3503
 #, php-format
 msgid "The installation of %1$s failed."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:3592
+#: thrive/tgm/class-tgm-plugin-activation.php:3507
 msgid ""
 "The installation and activation process is starting. This process may take a "
 "while on some hosts, so please be patient."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:3594
+#: thrive/tgm/class-tgm-plugin-activation.php:3509
 #, php-format
 msgid "%1$s installed and activated successfully."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:3594
-#: thrive/tgm/class-tgm-plugin-activation.php:3602
+#: thrive/tgm/class-tgm-plugin-activation.php:3509
+#: thrive/tgm/class-tgm-plugin-activation.php:3517
 msgid "Show Details"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:3594
-#: thrive/tgm/class-tgm-plugin-activation.php:3602
+#: thrive/tgm/class-tgm-plugin-activation.php:3509
+#: thrive/tgm/class-tgm-plugin-activation.php:3517
 msgid "Hide Details"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:3595
+#: thrive/tgm/class-tgm-plugin-activation.php:3510
 msgid "All installations and activations have been completed."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:3597
+#: thrive/tgm/class-tgm-plugin-activation.php:3512
 #, php-format
 msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:3600
+#: thrive/tgm/class-tgm-plugin-activation.php:3515
 msgid ""
 "The installation process is starting. This process may take a while on some "
 "hosts, so please be patient."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:3602
+#: thrive/tgm/class-tgm-plugin-activation.php:3517
 #, php-format
 msgid "%1$s installed successfully."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:3603
+#: thrive/tgm/class-tgm-plugin-activation.php:3518
 msgid "All installations have been completed."
 msgstr ""
 
-#: thrive/tgm/class-tgm-plugin-activation.php:3605
+#: thrive/tgm/class-tgm-plugin-activation.php:3520
 #, php-format
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
@@ -2695,43 +2667,43 @@ msgstr ""
 msgid "Visit Profile"
 msgstr ""
 
-#: thrive/theme-widgets/members-birthday.php:142
+#: thrive/theme-widgets/members-birthday.php:131
 msgid " Happy%20Birthday!"
 msgstr ""
 
-#: thrive/theme-widgets/members-birthday.php:152
+#: thrive/theme-widgets/members-birthday.php:136
 msgid "Happy Birthday!"
 msgstr ""
 
-#: thrive/theme-widgets/members-birthday.php:153
+#: thrive/theme-widgets/members-birthday.php:137
 msgid "Greet"
 msgstr ""
 
-#: thrive/theme-widgets/members-birthday.php:184
+#: thrive/theme-widgets/members-birthday.php:156
 msgid "There are no upcoming birthday celebrations"
 msgstr ""
 
-#: thrive/theme-widgets/members-birthday.php:231
+#: thrive/theme-widgets/members-birthday.php:202
 msgid "Birthdays"
 msgstr ""
 
-#: thrive/theme-widgets/members-birthday.php:240
+#: thrive/theme-widgets/members-birthday.php:211
 msgid "Show Birthdays:"
 msgstr ""
 
-#: thrive/theme-widgets/members-birthday.php:243
+#: thrive/theme-widgets/members-birthday.php:214
 msgid "This Year"
 msgstr ""
 
-#: thrive/theme-widgets/members-birthday.php:244
+#: thrive/theme-widgets/members-birthday.php:215
 msgid "This Month"
 msgstr ""
 
-#: thrive/theme-widgets/members-birthday.php:245
+#: thrive/theme-widgets/members-birthday.php:216
 msgid "This Week"
 msgstr ""
 
-#: thrive/theme-widgets/members-birthday.php:256
+#: thrive/theme-widgets/members-birthday.php:228
 msgid "Hide if no birthdays:"
 msgstr ""
 
@@ -2761,11 +2733,11 @@ msgstr ""
 msgid "Use this option to select a general font for the content of the theme."
 msgstr ""
 
-#: thrive/typography/customizer/options.php:121
+#: thrive/typography/customizer/options.php:120
 msgid "Font Point"
 msgstr ""
 
-#: thrive/typography/customizer/options.php:122
+#: thrive/typography/customizer/options.php:121
 msgid ""
 "Controls the overall size of the text. Minimum recommended input is \"12\" "
 "and the maximum recommended input is \"22\". Set the value to \"14\" in "
@@ -2860,20 +2832,4 @@ msgstr ""
 
 #: thrive/widgets/customizer/widgets.php:105
 msgid "Links Hover"
-msgstr ""
-
-#: thrive/widgets/widgets.php:40
-msgid "Sidebar"
-msgstr ""
-
-#: thrive/widgets/widgets.php:50
-msgid "BP Sidebar"
-msgstr ""
-
-#: thrive/widgets/widgets.php:60
-msgid "Sidenav Sidebar"
-msgstr ""
-
-#: thrive/widgets/widgets.php:80
-msgid "Dashboard"
 msgstr ""
