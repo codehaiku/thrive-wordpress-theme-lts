@@ -440,10 +440,10 @@
 
 				ul.sub-menu {
 					position: absolute;
-					left: -124px;
+					left: -195px;
 					top: 0px;
 					display: none;
-					width: 125px;
+					width: 195px;
 					@include card(1);
 
 					@media(max-width: 768px) {

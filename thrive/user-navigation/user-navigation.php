@@ -185,7 +185,6 @@ if ( ! function_exists( 'thrive_user_nav' ) ) {
 							<i class="material-icons md-24">menu</i>
 						</a>
 						<div class="user-notifications" id="navigation">
-							<?php //thrive_bp_nav_menu(); ?>
 							<?php thrive_bp_navigation(); ?>
 						</div>
 					</li>
@@ -195,7 +194,7 @@ if ( ! function_exists( 'thrive_user_nav' ) ) {
 						<a href="#" title="" class="no-pd-right">
 							<i class="material-icons md-24">menu</i>
 						</a>
-						<div class="user-notifications" id="topbarmenu-navigation">
+						<div class="user-notifications" id="navigation">
 							<?php
 								$nav = wp_nav_menu(
 									array(
@@ -428,6 +427,7 @@ function thrive_bp_navigation() {
                     <?php echo $nav['count']; ?>
                 </a>
                 <?php if ( true === $nav['has_subnav'] ) { ?>
+                	<?php if ( ! empty( $nav['subnav'] ) ) { ?>
                     <ul class="sub-menu">
                         <?php foreach ( $nav['subnav'] as $subnav ) { ?>
                             <li id="<?php echo esc_attr( $subnav['css_id'] ) ?>" class="<?php echo esc_attr( $subnav['class'] ); ?>">
@@ -437,6 +437,7 @@ function thrive_bp_navigation() {
                             </li>
                         <?php } ?>
                     </ul>
+                    <?php } ?>
                 <?php } ?>
             </li>
     <?php } ?>
