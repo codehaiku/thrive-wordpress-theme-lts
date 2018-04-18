@@ -418,6 +418,34 @@ function thrive_bp_navigation() {
     if ( !function_exists('buddypress') ) {
         return;
     }
+    $bp_navigation = thrive_bp_get_nav();
+    ?>
+    <ul>
+        <?php foreach ( $bp_navigation as $nav ) { ?>
+            <li id="<?php echo esc_attr( $nav['css_id'] ) ?>" class="menu-parent <?php echo esc_attr( $nav['class'] ); ?>">
+                <a href="<?php echo esc_url( $nav['link'] ) ?>">
+                    <?php echo $nav['name']; ?>
+                    <?php echo $nav['count']; ?>
+                </a>
+                <?php if ( true === $nav['has_subnav'] ) { ?>
+                    <ul class="sub-menu">
+                        <?php foreach ( $nav['subnav'] as $subnav ) { ?>
+                            <li id="<?php echo esc_attr( $subnav['css_id'] ) ?>" class="<?php echo esc_attr( $subnav['class'] ); ?>">
+                                <a href="<?php echo esc_url( $subnav['link'] ) ?>">
+                                    <?php echo $subnav['name']; ?>
+                                </a>
+                            </li>
+                        <?php } ?>
+                    </ul>
+                <?php } ?>
+            </li>
+    <?php } ?>
+    </ul>
+<?php }
+function thrive_bp_navigation_old() {
+    if ( !function_exists('buddypress') ) {
+        return;
+    }
 
     $bp_navigation = thrive_bp_component_nav_setup();
     $current_component = bp_current_component();
