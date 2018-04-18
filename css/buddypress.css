@@ -1819,10 +1819,10 @@ body.friend-requests.buddypress ul#friend-list li .item-details-column {
         float: right; }
       #site-user-updates #navigation ul li ul.sub-menu {
         position: absolute;
-        left: -124px;
+        left: -195px;
         top: 0px;
         display: none;
-        width: 125px;
+        width: 195px;
         box-shadow: 0 1.5px 1px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.12); }
         @media (max-width: 768px) {
           #site-user-updates #navigation ul li ul.sub-menu {
