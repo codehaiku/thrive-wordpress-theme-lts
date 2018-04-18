@@ -1,13 +1,19 @@
 <?php
 
 function thrive_bp_get_users_messages() {
+
     if ( !function_exists('buddypress') ) {
         return;
     }
 
     global $messages_template;
+    $messages = '';
+    
+    if ( ! empty( $messages_template->threads ) ) 
+    {
+        $messages = $messages_template->threads;
+    }
 
-    $messages = $messages_template->threads;
     $user_id = bp_loggedin_user_id();
     $user_message = array();
     $user_messages = array();
@@ -17,6 +23,8 @@ function thrive_bp_get_users_messages() {
         'page'         => 1,
         'per_page'     => 10,
         'page_arg'     => 'mpage',
+        'pag_num'     => 0,
+        'pag_page'     => 1,
         'box'          => 'inbox',
         'type'         => 'all',
         'user_id'      => $user_id,
@@ -24,6 +32,7 @@ function thrive_bp_get_users_messages() {
         'search_terms' => '',
         'meta_query'   => array(),
     );
+    
     if ( 'inbox' === $args['box'] ) {
         $threads = BP_Messages_Thread::get_current_threads_for_user( array(
             'user_id'      => $args['user_id'],
