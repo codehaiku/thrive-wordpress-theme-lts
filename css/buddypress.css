@@ -1583,6 +1583,9 @@ body.friend-requests.buddypress ul#friend-list li .item-details-column {
       margin-bottom: 0;
       position: relative;
       display: inline-block; }
+      @media (min-width: 992px) {
+        #item-nav ul li:first-child {
+          margin-left: 10px; } }
       @media (max-width: 768px) {
         #item-nav ul li {
           width: 100%;
@@ -1986,6 +1989,9 @@ body.friend-requests.buddypress ul#friend-list li .item-details-column {
 
 .group-members.buddypress #subnav #group_members-order-select {
   margin-top: -35px; }
+
+.buddypress #buddypress #item-body {
+  padding: 0; }
 
 .buddypress #item-body {
   background: #fff; }
