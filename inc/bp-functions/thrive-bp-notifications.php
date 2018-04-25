@@ -81,7 +81,7 @@ function thrive_bp_get_the_notifications_description() {
         } else {
 
             /** This filter is documented in bp-notifications/bp-notifications-functions.php */
-            $description = apply_filters_ref_array( 'thrive_bp_notifications_get_notifications_for_user', array( $notification->component_action, $notification->item_id, $notification->secondary_item_id, 1, 'string', $notification->component_action, $notification->component_name, $notification->id ) );
+            $description = apply_filters_ref_array( 'bp_notifications_get_notifications_for_user', array( $notification->component_action, $notification->item_id, $notification->secondary_item_id, 1, 'string', $notification->component_action, $notification->component_name, $notification->id ) );
         }
 
         $descriptions[] = $description;
