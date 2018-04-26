@@ -141,7 +141,7 @@ function thrive_entry_footer() {
 								comment
 							</span>
 							<span class="entry-actions-comment-count">
-								<?php comments_number('Add Comment', '1 Comment', '% Comments' ); ?>
+								<?php comments_number( esc_html__( 'Add Comment', 'thrive' ), esc_html__( '1 Comment', 'thrive' ), esc_html__( '% Comments', 'thrive' ) ); ?>
 							</span>
 						</a>
 						<div class="clearfix"></div>

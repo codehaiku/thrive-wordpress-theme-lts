@@ -556,7 +556,7 @@ body.thrive-inline #wp-link-wrap.wp-core-ui form#wp-link .query-results .query-n
 .single-bp_doc #comments .comments-closed.comments-empty:before, ul.docs-folder-manage li.folder .folder-info h4:before, .thrive-inline .datepicker.dropdown-menu table thead tr th.prev:before, .thrive-inline .datepicker.dropdown-menu table thead tr th.next:before, .single-tribe_events .tribe-events-schedule .tribe-events-cost:before, .tribe-events-notices:before, .tribe-bar-views-list span.tribe-icon-day:before, .tribe-select2-results-views span.tribe-icon-day:before, .tribe-bar-view-list span[class^=tribe-icon-]:before, .tribe-bar-views-list span.tribe-icon-list:before, .tribe-select2-results-views span.tribe-icon-list:before, .tribe-bar-view-list a.tribe-icon-month:before, .tribe-bar-views-list span.tribe-icon-month:before, .tribe-select2-results-views .tribe-icon-month:before, #tribe-events-content .tribe-events-calendar td .tribe-events-month-event-title a:before, #tribe-events-content .tribe-events-event-cost span:before, .tribe-events-list-widget ol.tribe-list-widget li .tribe-event-title a:before,
 .tribe-events-list-widget ol.vcalendar li .tribe-event-title a:before, #task_breaker-new-project-btn:before, .glyphicon.glyphicon-star + .gears-pricing-table .gears-pricing-table-title h3:before, .gears-pricing-table .gears-pricing-table-features-list-wrap li .text-success:before,
 .gears-pricing-table .gears-pricing-table-features-list-wrap li .text-danger:before, .gears_blog_post_widget .gears-blog-posts-item-thumbnail a:before, .gears_blog_post_widget .gears-blog-posts-item-details-comment .gears_blog_post_comment:before, .thrive-inline .bbp-template-notice.info:before, .thrive-inline .bbp-template-notice:before, .thrive-inline .indicator-hint:before, .thrive-inline .bbp-template-notice.error:before, .thrive-inline .bbp-user-section > p:nth-child(1):before, .thrive-inline .bbp-template-notice.warning:before, .thrive-inline .bbp-template-notice.error p:before, .thrive-inline .bbp-user-section > p:nth-child(1) p:before, .thrive-inline .bbp-template-notice.warning p:before, .thrive-inline #bbpress-forums ul.bbp-replies .bbp-admin-links a:before, .bbpress.singular #bbpress-forums #bbp-user-body #bbp-user-profile .bbp-user-section p:before, .bbp-user-edit #bbpress-forums #bbp-user-body fieldset.bbp-form div span.description:before, .widget.widget_display_forums ul li a:before, .widget.widget_display_views ul li a:before, .widget.widget_display_topics ul li .bbp-forum-title:before, .widget.widget_display_stats dt:before, .thrive-inline ul.products li.product .onsale:before, .thrive-inline div.product .onsale:before, .thrive-inline .widget.widget_shopping_cart .cart_list li a.remove:before, .thrive-inline .widget.widget_layered_nav ul li.chosen a:before, .thrive-inline .widget.widget_layered_nav_filters ul li.chosen a:before, .thrive-inline .widget.widget_product_categories ul.product-categories li a:before, .thrive-inline.woocommerce-cart #content table.shop_table tr.cart_item .product-remove .remove:before, .thrive-inline #primary .woocommerce-info:before, .thrive-inline #primary .cart-empty:before, .thrive-inline #primary .woocommerce-error:before, .thrive-inline #primary .woocommerce-message:before, .thrive-inline #primary .stock:before, .thrive-inline #primary .stock.out-of-stock:before, .thrive-inline #primary .woocommerce-error li:before, .woocommerce-account .woocommerce-MyAccount-navigation ul li a:before, #thrive-wisechat-support .wcControlsButtonsIncluded a.wcAddImageAttachment:before, .thrive-inline .wcContainer a.wcAddImageAttachment:before, .thrive-inline .wcContainer .wcCustomizations a.wcCustomizeButton:before, .thrive-inline .wcContainer .wcControls .wcInsertEmoticonButton:before,
-.thrive-inline .wcContainer .wcControls .wcAddFileAttachment:before, .thrive-inline .rtmedia-success:before, .thrive-inline .rtmedia-warning:before, .thrive-inline .rtmedia-gallery-alert-container .rtmedia-gallery-message-box .rtmedia-success:before, .thrive-inline .rtmedia-container .rtmedia-uploader .rtm-album-privacy label .dashicons-format-gallery:before, .thrive-inline .rtmedia-container .rtmedia-upload-media-link i:before, .thrive-inline .rtmedia-container .rtmedia-no-media-found:before, .thrive-inline .mfp-wrap .rtmedia-popup .mfp-close:before, .thrive-inline #rtmedia-uploader-form ul.rtm-plupload-list#rtmedia_uploader_filelist li .plupload_file_action .plupload_action_icon .remove-from-queue:before, .thrive-inline #rtmedia-uploader-form ul.rtm-plupload-list#rtmedia_uploader_filelist li .plupload_file_name .rtmicon.dashicons-yes:before, .thrive-inline #rtmedia-uploader-form ul.rtm-plupload-list#rtmedia_uploader_filelist li .plupload_file_name .rtmicon.dashicons-edit:before, .thrive-inline #rtmedia-uploader-form ul.rtm-plupload-list#rtmedia_uploader_filelist li .plupload_file_name .rtmicon.dashicons-info:before, .thrive-inline #rtmedia-uploader-form ul.rtm-plupload-list#rtmedia_uploader_filelist li.upload-progress .plupload_file_action .rtmedia-delete-uploaded-media:before, .thrive-inline .mfp-wrap .rtm-lightbox-container .mfp-close:before, .single-item.groups #buddypress ul.rtmedia-list li .rtmedia-gallery-item-actions a:nth-child(1) i:before,
+.thrive-inline .wcContainer .wcControls .wcAddFileAttachment:before, .rtm-media-options #media_search_form #media_search .rtmicon:before, .thrive-inline .rtmedia-success:before, .thrive-inline .rtmedia-warning:before, .thrive-inline .rtmedia-gallery-alert-container .rtmedia-gallery-message-box .rtmedia-success:before, .thrive-inline .rtmedia-container .rtmedia-uploader .rtm-album-privacy label .dashicons-format-gallery:before, .thrive-inline .rtmedia-container .rtmedia-upload-media-link i:before, .thrive-inline .rtmedia-container .rtmedia-no-media-found:before, .thrive-inline .mfp-wrap .rtmedia-popup .mfp-close:before, .thrive-inline #rtmedia-uploader-form ul.rtm-plupload-list#rtmedia_uploader_filelist li .plupload_file_action .plupload_action_icon .remove-from-queue:before, .thrive-inline #rtmedia-uploader-form ul.rtm-plupload-list#rtmedia_uploader_filelist li .plupload_file_name .rtmicon.dashicons-yes:before, .thrive-inline #rtmedia-uploader-form ul.rtm-plupload-list#rtmedia_uploader_filelist li .plupload_file_name .rtmicon.dashicons-edit:before, .thrive-inline #rtmedia-uploader-form ul.rtm-plupload-list#rtmedia_uploader_filelist li .plupload_file_name .rtmicon.dashicons-info:before, .thrive-inline #rtmedia-uploader-form ul.rtm-plupload-list#rtmedia_uploader_filelist li.upload-progress .plupload_file_action .rtmedia-delete-uploaded-media:before, .thrive-inline .mfp-wrap .rtm-lightbox-container .mfp-close:before, .single-item.groups #buddypress ul.rtmedia-list li .rtmedia-gallery-item-actions a:nth-child(1) i:before,
 .bp-user #buddypress ul.rtmedia-list li .rtmedia-gallery-item-actions a:nth-child(1) i:before, .single-item.groups #buddypress ul.rtmedia-list li .rtmedia-gallery-item-actions a.rtm-delete-media i:before,
 .bp-user #buddypress ul.rtmedia-list li .rtmedia-gallery-item-actions a.rtm-delete-media i:before, .thrive-inline #rtmedia-no-comments:before, .thrive-inline .rtmedia-like-info:before, .thrive-inline .rtm-comment-list.rtm-comment-list .rtmedia-comment .rtmedia-delete-comment:before, .rtm-media-options-list i:before, .thrive-inline .wpknb .wpknb-search:before, .thrive-inline.single-knowledge_base .nav-previous:before,
 .thrive-inline.single-knowledge_base .nav-next:before, .thrive-inline .wpknb-category .wpknb-inner .wpknb-lists li .knb-icon:before, .thrive-inline .wpknb-category .wpknb-full-category-count a:before, #site-user-updates ul > .item:last-of-type > a i:before {
@@ -8639,8 +8639,35 @@ button#rtmedia-add-media-button-post-update .dashicons {
 #buddypress form#whats-new-form #whats-new-options select#rtSelectPrivacy {
   margin-top: 7.5px; }
 
+body.thrive-inline.media.buddypress {
+  overflow-y: initial; }
+
+.rtm-media-options #rtm_show_upload_ui {
+  border-right: none; }
+
+.rtm-media-options #media_search_form {
+  position: relative;
+  top: -10px; }
+  .rtm-media-options #media_search_form #media_search {
+    width: 36px;
+    color: #fff;
+    background-color: #0288D1; }
+    .rtm-media-options #media_search_form #media_search .rtmicon:before {
+      content: 'search';
+      font-size: 20px; }
+  .rtm-media-options #media_search_form #media_search_remove {
+    color: #D32F2F;
+    position: relative;
+    top: 3.5px; }
+  .rtm-media-options #media_search_form #media_fatch_loader.load {
+    top: 2.5px; }
+
 #rtm-drop-files-title {
   display: none !important; }
+
+.thrive-inline .rtmedia-no-media-found,
+.thrive-inline .rtmedia-list-media {
+  min-height: 44px; }
 
 .thrive-inline #buddypress #whats-new-options {
   overflow: hidden;
@@ -10024,6 +10051,13 @@ body.thrive-layout-2_columns #sidebar-wrapper {
   padding: 0;
   display: inline-block;
   width: 100%; }
+
+#site-user-updates ul#notifications-ul li.user-see-all-notifications {
+  position: relative;
+  top: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  margin: 0 -25px;
+  padding: 10px 25px 0; }
 
 div#thrive-user-nav-messages-footer,
 div#thrive-user-nav-messages-head {

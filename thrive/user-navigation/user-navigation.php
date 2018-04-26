@@ -78,13 +78,11 @@ if ( ! function_exists( 'thrive_user_nav' ) ) {
 					<?php if ( !empty( $notifications ) ) { ?>
 
 						<div class="user-notifications">
-							<?php if ( !empty( $notifications ) ) { ?>
 							<ul class="user-notification-personal">
 								<?php foreach ( $notifications as $notification ) { ?>
 									<li><?php echo thrive_handle_empty_var( $notification ); ?></li>
 								<?php } ?>
 							</ul>
-							<?php } ?>
 						</div>
 
 					<?php } ?>
@@ -114,20 +112,43 @@ if ( ! function_exists( 'thrive_user_nav' ) ) {
 
 					<?php if ( 0 !== $unread_notifications ) { ?>
 
-					<div class="user-notifications">
-						<?php if ( bp_has_notifications() ) : ?>
+                        <?php
+                            $user_notifications = thrive_bp_get_the_notifications_description();
+                            $loggedin_user_id = bp_loggedin_user_id();
+                            $count = 1;
+                            $total_allowed_notification_display = apply_filters( 'thrive_bp_total_displayed_notifications', 10 );
+                            $see_all_notifications_link = bp_get_notifications_permalink( $loggedin_user_id );
+                        ?>
 
-                            <?php $user_notifications = thrive_bp_get_the_notifications_description(); ?>
+                        <?php if ( !empty( $user_notifications ) ) { ?>
+        					<div class="user-notifications">
+        						<?php if ( bp_has_notifications() ) : ?>
 
-                            <ul id="notifications-ul">
-                                <?php foreach ( $user_notifications as $user_notification ) { ?>
-                                    <li>
-                                        <?php echo $user_notification; ?>
-                                    </li>
-                                <?php } ?>
-							</ul>
-						<?php endif; ?>
-					</div>
+                                        <ul id="notifications-ul">
+                                            <?php foreach ( $user_notifications as $user_notification ) { ?>
+
+                                                <?php if ( $count <= $total_allowed_notification_display ) { ?>
+                                                    <li>
+                                                        <?php echo thrive_handle_empty_var( $user_notification ); ?>
+                                                    </li>
+                                                <?php } ?>
+
+                                                <?php $count++; ?>
+                                            <?php } ?>
+
+                                            <?php if ( $count >= $total_allowed_notification_display ) { ?>
+                                                <li class="user-see-all-notifications">
+                                                    <a href="<?php echo esc_url( $see_all_notifications_link ); ?>" title="<?php _e('See All Notifications', 'thrive'); ?>">
+                                                        <?php _e('See All Notifications', 'thrive'); ?>
+                                                    </a>
+                                                </li>
+                                            <?php } ?>
+
+            							</ul>
+
+        						<?php endif; ?>
+        					</div>
+                        <?php } ?>
 
 					<?php } ?>
 
