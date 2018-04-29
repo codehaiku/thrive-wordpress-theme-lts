@@ -5,13 +5,47 @@ button#rtmedia-add-media-button-post-update .dashicons {
 #buddypress form#whats-new-form #whats-new-options select#rtSelectPrivacy {
 	margin-top: 7.5px;
 }
+body.thrive-inline.media.buddypress {
+    overflow-y: initial;
+}
 
-.rtm-media-options{
+.rtm-media-options {
+    #rtm_show_upload_ui {
+        border-right: none;
+    }
+    #media_search_form {
+        position: relative;
+        top: -10px;
+        #media_search {
+            width: 36px;
+            color: $light;
+            background-color: $primary_700;
+            .rtmicon {
+                @extend .material_font_extend;
+                &:before {
+                    content: 'search';
+                    font-size: 20px;
+                }
+            }
+        }
+        #media_search_remove {
+            color: $red_700;
+            position: relative;
+            top: 3.5px;
+        }
+        #media_fatch_loader.load {
+            top: 2.5px;
+        }
+    }
 }
 #rtm-drop-files-title{
 	display: none!important;
 }
 .thrive-inline {
+    .rtmedia-no-media-found,
+    .rtmedia-list-media {
+        min-height: 44px;
+    }
 	#buddypress #whats-new-options {
 		overflow: hidden;
 		width: 100%;

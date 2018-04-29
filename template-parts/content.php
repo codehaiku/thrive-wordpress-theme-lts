@@ -28,16 +28,16 @@
 						comment
 					</span>
 					<span class="entry-actions-comment-count">
-						<?php comments_number('Add Comment', '1 Comment', '% Comments' ); ?>
+						<?php comments_number( esc_html__( 'Add Comment', 'thrive' ), esc_html__( '1 Comment', 'thrive' ), esc_html__( '% Comments', 'thrive' ) ); ?>
 					</span>
 				</a>
 			</div><!--.entry-actions-->
 		</header><!-- .entry-header -->
 
 	<?php } else { ?>
-		
+
 		<header class="entry-header">
-			
+
 			<div class="entry-meta">
 				<?php thrive_posted_on(); ?>
 			</div><!-- .entry-meta -->
@@ -53,11 +53,11 @@
 	<!--"End Header"-->
 
 	<div class="entry-content">
-		
+
 		<?php if ( has_post_thumbnail() ) { ?>
 
 			<header class="entry-header mg-top-10 visible-xs">
-			
+
 				<div class="entry-meta">
 					<?php thrive_posted_on(); ?>
 				</div><!-- .entry-meta -->
@@ -65,7 +65,7 @@
 				<a href="<?php echo esc_url(the_permalink()); ?>" title="<?php echo esc_attr(the_title()); ?>">
 					<?php the_title('<h1 class="entry-title">', '</h1>' ); ?>
 				</a>
-				
+
 			</header><!-- .entry-header -->
 
 		<?php } ?>

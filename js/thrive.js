@@ -66,20 +66,6 @@ jQuery(document).ready(function($){
 		});
 	});
 
-    /**
-     * SideNav Sidebar
-     * Creates cookie for the SideNav Sidebar last state
-     */
-    $('#page-sidebar-toggle').click(function(e){
-        e.preventDefault();
-        $.cookie( 'isSideNavSidebarClose', true, { expires: 7, path: '/' } );
-    });
-
-    $('#toggle-add').click(function(e){
-        e.preventDefault();
-        $.cookie( 'isSideNavSidebarClose', false, { expires: 7, path: '/' } );
-    });
-
 	/**
 	 * Couses Masonry
 	 */
@@ -164,14 +150,39 @@ jQuery(document).ready(function($){
 	 	//return;
 	}
 
+    /**
+     * SideNav Sidebar
+     * Creates cookie for the SideNav Sidebar last state
+     */
+
+    var screenWidth = $(document).width();
+
 	$('#page-sidebar-toggle').click(function(e){
 		e.preventDefault();
 		$('#thrive-global-wrapper').toggleClass('toggled');
+
+        $.cookie( 'isSideNavSidebarClose', 'close', { expires: 1, path: '/' } );
+
+        // console.log($.cookie( 'isSideNavSidebarClose'));
+
+        if ( screenWidth <= 768 ) {
+            $.cookie( 'isSideNavSidebarMobileClose', 'mobile_close', { expires: 1, path: '/' } );
+        }
+
 	});
 
 	$('#toggle-add').click(function(e){
 		e.preventDefault();
 		$('#thrive-global-wrapper').toggleClass('toggled');
+
+        $.cookie( 'isSideNavSidebarClose', 'open', { expires: 1, path: '/' } );
+
+        // console.log($.cookie( 'isSideNavSidebarClose'));
+
+        if ( screenWidth <= 768 ) {
+            $.cookie( 'isSideNavSidebarMobileClose', 'mobile_close', { expires: 1, path: '/' } );
+        }
+
 	});
 
 	// Thrive Wisechat Support.

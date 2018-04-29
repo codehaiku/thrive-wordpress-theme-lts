@@ -8,9 +8,9 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	
+
 	<?php if (has_post_thumbnail()) { ?>
-	
+
 	<header class="entry-header has-post-thumbnail mg-bottom-25">
 
 		<div class="entry-thumbnail">
@@ -30,7 +30,7 @@
 					comment
 				</span>
 				<span class="entry-actions-comment-count">
-					<?php comments_number('Add Comment', '1 Comment', '% Comments' ); ?>
+					<?php comments_number( esc_html__( 'Add Comment', 'thrive' ), esc_html__( '1 Comment', 'thrive' ), esc_html__( '% Comments', 'thrive' ) ); ?>
 				</span>
 			</a>
 		</div><!--.entry-actions-->
@@ -49,7 +49,7 @@
 	<?php } ?>
 
 	<div class="entry-content">
-	
+
 		<?php if ( has_post_thumbnail() ) { ?>
 			<div class="visible-xs">
 				<?php thrive_posted_on(); ?>
@@ -71,4 +71,3 @@
 		<?php thrive_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
-

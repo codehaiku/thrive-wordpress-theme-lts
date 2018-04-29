@@ -115,7 +115,7 @@ body.thrive-layout-2_columns #sidebar-wrapper {
 				       transform: rotateX(-180deg);
 				    }
 				}
-				
+
 				a {
 					display: table;
 					width: 100%;
@@ -616,6 +616,15 @@ body.thrive-layout-2_columns #sidebar-wrapper {
 	padding: 0;
 	display: inline-block;
 	width: 100%;
+}
+#site-user-updates ul#notifications-ul {
+    li.user-see-all-notifications {
+        position: relative;
+        top: 10px;
+        border-top: 1px solid rgba(0, 0, 0, 0.12);
+        margin: 0 -25px;
+        padding: 10px 25px 0;
+    }
 }
 
 div#thrive-user-nav-messages-footer,
