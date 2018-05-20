@@ -5,7 +5,7 @@
  * @package thrive
  */
 
-define( 'DUNHAKDIS_THEME_VERSION', '2.2.3' );
+define( 'DUNHAKDIS_THEME_VERSION', '2.2.4' );
 
 if ( ! function_exists( 'thrive_init' ) ):
 	function thrive_init() {
